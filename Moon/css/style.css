@@ -1,0 +1,302 @@
+/* COMANDOS CONFIGURACOES GERAIS PAGINA */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "K2D";
+  color: white;
+}
+
+
+/* BACKGROUND PAGINA */
+
+.background {
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-image: url(/img/moonbg.jpg);
+  background-color: rgb(40, 21, 51);
+}
+
+/* Comeco Header */
+
+/* Background Header */
+
+
+.bgheader {
+  background: rgb(42, 0, 55);
+  background: linear-gradient(
+    180deg,
+    rgba(42, 0, 55, 1) 50%,
+    rgba(126, 5, 156, 0) 95%
+  );
+}
+
+/* Titulo Loja */
+
+.tituloLoja {
+  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.495);
+}
+
+/* Cursor em cima do titulo Loja */
+
+.tituloLoja:hover{
+  transition: .5s;
+  text-shadow: 3px 3px 15px rgb(255, 255, 255);
+}
+
+/* Links Header Com Cursor em Cima */
+
+.linkBtn:hover{
+  scale: 1.1;
+  transition: .5s;
+  text-shadow: 3px 3px 15px rgb(255, 255, 255);
+}
+
+/* Links Header */
+
+.links{
+  display: flex;
+  margin-left: 2vw;
+}
+
+/* SearchBar */
+
+.form-control-dark{
+  background-color: rgba(61, 6, 112, 0.485) !important;
+  color: white !important;
+  border-color: rgba(179, 107, 247, 0.436) !important;
+}
+
+.form-control-dark::placeholder{
+  color: rgba(255, 255, 255, 0.515)!important;
+}
+
+
+.text-end a{
+  text-decoration: none;
+  color: white;
+}
+
+/* Botao Login */
+
+
+
+.btn-outline-light:hover{
+  background-color: transparent !important;
+  text-shadow: 2px 2px 10px white;
+  box-shadow: 2px 2px 10px white;
+  scale: 1.1;
+  transition: .5s;
+}
+
+/* Botao Cadastro */
+
+.btn-warning{
+  border-color:rgb(255, 255, 255) !important;
+  color: #ffffff !important;
+  background-color: rgb(81, 9, 149) !important;
+}
+
+.btn-warning:hover{
+  text-shadow: 2px 2px 10px white;
+  scale: 1.1;
+  transition: .5s;
+  text-shadow: none !important;
+  filter: brightness(2)!important;
+  box-shadow: 2px 2px 10px white;
+}
+
+/* Fim Header */
+
+
+/* Conteudo da Pagina */
+
+.main{
+  padding: 18vh 20vh;
+}
+
+/* DIV do destaque */
+
+/* Setas Carrossel Destaque */
+
+.carousel-control-next:hover{
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  transition: 1s;
+}
+
+.carousel-control-prev:hover{
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  transition: 1s;
+  scale: 1.1 !important;
+}
+
+.generosCarousel .carousel-control-next:hover{
+  background-color: transparent !important;
+  scale: 1.1 !important;
+}
+
+.generosCarousel .carousel-control-prev:hover{
+  background-color: transparent !important;
+  scale: 1.1 !important;
+}
+
+.destaque {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Imagem dentro da div do destaque */
+
+.destaque img {
+  cursor: pointer;
+  filter: brightness(0.7);
+}
+
+/* Mouse em cima da imagem dentro da div Destaque */
+
+.carousel-destaque img:hover {
+  filter: brightness(1);
+  transition: 0.5s;
+}
+
+/* Texto Dentro do Item Destaque */
+
+.carousel-caption {
+  filter: brightness(0.6);
+  background-color: rgba(0, 0, 0, 0.449);
+}
+
+.carroselDestaques:hover{
+  filter: brightness(1.5);
+  transition: 1s;
+}
+
+
+/* Botao Dentro do Item Destaque (preco) */
+
+.destaqueBtn{
+  padding: 1vh;
+  font-size: 10vh;
+  background-color: rgba(128, 0, 0, 0.639);
+  border: none;
+}
+
+.destaqueBtn:hover{
+  border-radius: 10px;
+  scale: 1.1;
+  box-shadow: 2px 2px 5px rgba(182, 96, 215, 0.406);
+  transition: 0.5s;
+}
+
+.generosCarousel {
+  padding: 4vh;
+}
+
+/* DIV dos grupos dos generos */
+
+.generos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Imagem Dentro das divs GENEROS */
+
+.generos img {
+  border-radius: 20px;
+  opacity: 70%;
+  width: 19rem;
+  height: 10rem;
+  cursor: pointer;
+  filter: brightness(0.5);
+}
+
+/* Texto Dentro das divs Generos */
+
+.generos p {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff; /* cor do texto */
+  font-size: 24px; /* tamanho da fonte */
+  font-weight: bold; /* peso da fonte */
+  text-align: center; /* alinhamento do texto */
+  padding: 10px; /* espaçamento interno do texto */
+}
+
+/* Cada item dentro do grupo GENEROS */
+
+.genero1 {
+  position: relative;
+}
+
+.genero2 {
+  position: relative;
+}
+
+.genero3 {
+  position: relative;
+}
+
+.genero1:hover{
+  opacity: 200%;
+  transition: 0.5s;
+  filter: brightness(2);
+}
+
+.genero2:hover{
+  opacity: 200%;
+  transition: 0.5s;
+  filter: brightness(2);
+}
+
+.genero3:hover{
+  opacity: 200%;
+  transition: 0.5s;
+  filter: brightness(2);
+}
+
+/* Itens Tabela Loja (Explorar/Promocoes) */
+
+.storeItem{
+  background-color: rgba(52, 3, 98, 0.738) !important;
+  border-color: rgb(108, 6, 204) ;
+}
+
+.storeItem:hover{
+  border-color: transparent;
+  border-radius: 50px;
+  transition: 1s;
+  scale: 1.03;
+  background-color: rgba(68, 4, 129, 0.802) !important;
+}
+
+/* NavBar */
+
+.page-link{
+  background-color: rgba(70, 4, 106, 0.54) !important;
+  color: white !important;
+  border-color: blueviolet !important;
+}
+
+/* Cor dos textos com tag del (risco em cima do texto(wrong)) */
+
+del{
+  color: red;
+}
+
+.linkjogoLoja{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
