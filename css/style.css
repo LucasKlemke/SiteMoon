@@ -96,16 +96,15 @@
 .btn-warning{
   border-color:rgb(255, 255, 255) !important;
   color: #ffffff !important;
-  background-color: rgb(81, 9, 149) !important;
+  background-color: transparent !important;
 }
 
 .btn-warning:hover{
+  background-color: transparent !important;
   text-shadow: 2px 2px 10px white;
+  box-shadow: 2px 2px 10px white;
   scale: 1.1;
   transition: .5s;
-  text-shadow: none !important;
-  filter: brightness(2)!important;
-  box-shadow: 2px 2px 10px white;
 }
 
 /* Fim Header */
