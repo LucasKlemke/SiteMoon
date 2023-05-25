@@ -11,6 +11,12 @@
   color: white;
 }
 
+/* CLASSE PARA OCULTAR ITENS */
+
+.oculto{
+  display: none;
+}
+
 /* PLANO DE FUNDO DA PÁGINA */
 
 .background {
@@ -221,11 +227,13 @@
   transition: 0.5s;
 }
 
-/* DIV dos grupos dos generos */
+/* GENEROS */
 
 .generosCarousel {
   padding: 4vh;
 }
+
+/* GRUPO DE GENEROS */
 
 .generos {
   display: flex;
@@ -260,7 +268,7 @@
   padding: 10px; /* espaçamento interno do texto */
 }
 
-/* CADA ITEM DO GENEROS */
+/* CADA ITEM DO GRUPO DE GENEROS */
 
 .genero1 {
   position: relative;
@@ -292,7 +300,9 @@
   filter: brightness(2);
 }
 
-/* Itens Tabela Loja (Explorar/Promocoes) */
+/* EXPLORAR/PROMOÇÕES */
+
+/* PRODUTOS */
 
 .storeItem{
   background-color: rgba(52, 3, 98, 0.738) !important;
@@ -307,7 +317,7 @@
   background-color: rgba(68, 4, 129, 0.802) !important;
 }
 
-/* NavBar */
+/* BARRA DE NAVEGAÇÃO EM BAIXO DOS PRODUTOS */
 
 .page-link{
   background-color: rgba(70, 4, 106, 0.54) !important;
@@ -315,23 +325,24 @@
   border-color: blueviolet !important;
 }
 
-/* Cor dos textos com tag del (risco em cima do texto(wrong)) */
+/* PREÇO ORIGINAL PROMOÇÃO */
 
 del{
   color: red;
 }
+
+/* LINK DOS PRODUTOS */
 
 .linkjogoLoja{
   text-decoration: none;
   color: white;
 }
 
-.oculto{
-  display: none;
-}
 
-.aparecer{
-  display: block;
-}
+/* --------------------------------------------------------------------------------- */
+/*----------------------------------- FIM INDEX.HTML ------------------------------- */
+/* --------------------------------------------------------------------------------- */
+
+
 
 
