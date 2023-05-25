@@ -296,4 +296,12 @@ del{
   color: white;
 }
 
+.oculto{
+  display: none;
+}
+
+.aparecer{
+  display: block;
+}
+
 

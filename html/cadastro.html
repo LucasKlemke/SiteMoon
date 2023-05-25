@@ -18,7 +18,7 @@
     <title>Moon - Cadastro</title>
     <!-- SCRIP JAVASCRIPT -->
     <!-- Inserir Script -->
-    <script src="../js/script.js"></script>
+    <script defer src="../js/script.js"></script>
     <!-- SCRIPT IONICONS -->
     <script
       type="module"
@@ -104,7 +104,7 @@
             <!-- EMAIL -->
             <div class="form-group">
               <label for="exampleInputEmail1">Email:</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite o email">
+              <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Digite o email" id="email" required>
             </div>
 
             <br>
@@ -112,7 +112,7 @@
             <!-- Usuario -->
             <div class="form-group">
               <label for="exampleInputEmail1">Nome de usuário:</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite o seu nome para exibição">
+              <input type="user" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Digite o seu nome para exibição" required>
             </div>
 
             <br>
@@ -120,8 +120,8 @@
             <!-- SENHA -->
             <div class="form-group">
               <label for="exampleInputPassword1">Senha:</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Digite a senha">
-              <small id="passwordlHelp" class="form-text text-white" style="color: red !important; display: none;">Senhas diferentes</small>
+              <input type="password" class="form-control" id="password" placeholder="Digite a senha" required>
+              <small id="passwordHelp" class="form-text text-white oculto" style="color: red !important;">* As senhas devem ser iguais</small>
             </div>
 
             <br>
@@ -129,23 +129,26 @@
             <!-- CONFIRMAR SENHA -->
             <div class="form-group">
               <label for="exampleInputPassword1">Confirmar senha:</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirme a senha">
-              <small id="passwordlHelp" class="form-text text-white" style="color: red !important; display: none;">Senhas diferentes</small>
+              <input type="password" class="form-control" id="confirmPassword" placeholder="Confirme a senha" required>
+              <small id="passwordHelp2" class="form-text text-white oculto" style="color: red !important;">* As senhas devem ser iguais</small>
             </div>
 
             <br>
 
             <!-- TERMOS DE SERVIÇO -->
             <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <input type="checkbox" class="form-check-input" id="checkTerms" required>
               <label class="form-check-label" for="exampleCheck1">Aceita os <a href="termos.html">termos de serviço</a> ?</label>
+              <br>
+              <small id="checkHelp" class="form-text text-white oculto" style="color: red !important;">* Você deve aceitar os termos de serviço</small>
+            
             </div>
 
             <br>
 
             <!-- BOTÃO CADASTRO -->
             <div style="display: flex; justify-content: center;">
-              <button type="button" class="btn btn-success btn-lg">Cadastrar</button>
+              <button type="button" class="btn btn-success btn-lg" id="cadastroBtn">Cadastrar</button>
             </div>
           </form>
 
@@ -153,7 +156,7 @@
 
         </div>
       </div>
-      
+
       <!-- FIM CARD 1 (CADASTRO) -->
 
       <!-- Card 2 (Login) -->
@@ -162,22 +165,28 @@
         <div class="card-body">
           <h1 class="card-title text-light">Já possui conta ?</h1>
           <p style="color: rgba(226, 225, 225, 0.848);">Clique no botão abaixo para entrar em sua conta já criada:</p>
+          
           <!-- BOX BOTAO LOGIN -->
           <div style="display: flex; justify-content: center;">
+            
             <!-- BOTAO LOGIN -->
           <button type="button" class="btn btn-success btn-lg"><a href="login.html" style="text-decoration: none; color: white;">Entrar</a></button>
           </div>
+          
           <!-- BOX LOGO -->
           <div  style="display: flex; justify-content: center; padding-top: 4vh; align-items: end;">
+            
             <!-- LOGO -->
-            <h1 style="color: rgb(255, 255, 255); text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.495); cursor: default;">MOON</h1>
+            <h1 style="color: rgb(255, 255, 255); text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.495); cursor: default;">MOON<ion-icon name="moon"></ion-icon></h1>
           </div>
 
         </div>
       </div>
+
       <!-- FIM CARD 2 (LOGIN) -->
 
     </div>
+
     <!-- FIM BOX CONTEUDO -->
     
     </main>
