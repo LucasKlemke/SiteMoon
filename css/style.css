@@ -310,10 +310,9 @@
 }
 
 .storeItem:hover{
-  border-color: transparent;
+  border: 2px solid rgba(0, 140, 255, 0.355);
+  /* border-color: transparent; */
   border-radius: 50px;
-  transition: 1s;
-  scale: 1.03;
   background-color: rgba(68, 4, 129, 0.802) !important;
 }
 
@@ -337,6 +336,7 @@ del{
   text-decoration: none;
   color: white;
 }
+
 
 
 /* --------------------------------------------------------------------------------- */
