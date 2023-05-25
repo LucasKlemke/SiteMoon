@@ -90,3 +90,20 @@ function limparCampos() {
 }
 
 //   --------------------------------------------------------
+
+const pages = {
+  "Counter-Strike: Global-Offensive": 'produtoCounterStrike.html',
+  "Tom Clancy's Rainbow Six Siege": 'produtoRainbowSix.html'
+};
+
+document.getElementById('searchBar').addEventListener('keypress',function(event) {
+  if(event.key == 'Enter'){
+    event.preventDefault();
+
+    const searchTerm = this.value.toLowerCase();
+    if(pages.hasOwnProperty(searchTerm)) {
+      const pageUrl = pages[searchTerm];
+      window.location.href = pageUrl;
+    }
+  }
+})
