@@ -1,4 +1,7 @@
-/* COMANDOS CONFIGURACOES GERAIS PAGINA */
+/* ------------------------------------------------------------------------------- */
+/* ---------------------------COMANDOS GERAIS DA PÁGINA--------------------------- */
+/* ------------------------------------------------------------------------------- */
+
 
 * {
   box-sizing: border-box;
@@ -8,10 +11,7 @@
   color: white;
 }
 
-
-/* BACKGROUND PAGINA */
-
-
+/* PLANO DE FUNDO DA PÁGINA */
 
 .background {
   background-size: 100%;
@@ -21,10 +21,13 @@
   background-color: rgb(40, 21, 51);
 }
 
-/* Comeco Header */
+
+/* ------------------------------------------------------------------------------------- */
+/*----------------------------------COMEÇO HEADER--------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+
 
 /* Background Header */
-
 
 .bgheader {
   background: rgb(42, 0, 55);
@@ -35,14 +38,12 @@
   );
 }
 
-/* Titulo Loja */
+/* LOGO (MOON) HEADER */
 
 .tituloLoja {
   filter: brightness(0.9);
   text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.495);
 }
-
-/* Cursor em cima do titulo Loja */
 
 .tituloLoja:hover{
   filter: brightness(2);
@@ -50,7 +51,12 @@
   text-shadow: 3px 3px 15px rgb(255, 255, 255);
 }
 
-/* Links Header Com Cursor em Cima */
+/* LINKS DO HEADER */
+
+.links{
+  display: flex;
+  margin-left: 2vw;
+}
 
 .linkBtn{
   filter: brightness(0.9);
@@ -63,18 +69,7 @@
   
 }
 
-/* Links Header */
-
-.links{
-  display: flex;
-  margin-left: 2vw;
-}
-
-/* SearchBar */
-
-.form-control-dark:focus{
-  filter: brightness(1);
-}
+/* BARRA DE PESQUISA */
 
 .form-control-dark{
   filter: brightness(0.6);
@@ -83,17 +78,24 @@
   border-color: rgba(179, 107, 247, 0.436) !important;
 }
 
+.form-control-dark:focus{
+  filter: brightness(1);
+}
+
 .form-control-dark::placeholder{
   color: rgba(255, 255, 255, 0.515)!important;
 }
 
+/* ----------------------- */
+/* BOTÕES LOGIN E CADASTRO*/
+/* ---------------------- */
 
 .text-end a{
   text-decoration: none;
   color: white;
 }
 
-/* Botao Login */
+/* BOTÃO DE LOGIN */
 
 .btn-outline-light{
   filter: brightness(0.9);
@@ -126,18 +128,33 @@
   transition: .5s;
 }
 
-/* Fim Header */
+
+/* ------------------------------------------------------------------------------- */
+/* -----------------------------------FIM HEADER---------------------------------- */
+/* ------------------------------------------------------------------------------- */
 
 
+
+/* --------------------------------------------------------------------------------- */
+/*----------------------------------- INDEX.HTML ----------------------------------- */
+/* --------------------------------------------------------------------------------- */
+
+
+/* ------------------- */
 /* Conteudo da Pagina */
+/* ------------------ */
 
 .main{
   padding: 18vh 20vh;
 }
 
-/* DIV do destaque */
+/* DESTAQUE */
 
-/* Setas Carrossel Destaque */
+.carroselDestaques:hover{
+  filter: brightness(1.5);
+  transition: 1s;
+}
+/* < SETAS DO CARROSSEL DO DESTAQUE > */
 
 .carousel-control-next:hover{
   background-color: rgba(0, 0, 0, 0.5) !important;
@@ -160,6 +177,8 @@
   scale: 1.1 !important;
 }
 
+/* ITEM EM DESTAQUE */
+
 .destaque {
   padding: 1rem;
   display: flex;
@@ -167,34 +186,26 @@
   justify-content: center;
 }
 
-/* Imagem dentro da div do destaque */
+/* IMAGEM DO ITEM EM DESTAQUE */
 
 .destaque img {
   cursor: pointer;
   filter: brightness(0.7);
 }
 
-/* Mouse em cima da imagem dentro da div Destaque */
-
-.carousel-destaque img:hover {
+.destaque img:hover {
   filter: brightness(1);
   transition: 0.5s;
 }
 
-/* Texto Dentro do Item Destaque */
+/* TEXTO DENTRO DO ITEM EM DESTAQUE */
 
 .carousel-caption {
   filter: brightness(0.6);
   background-color: rgba(0, 0, 0, 0.449);
 }
 
-.carroselDestaques:hover{
-  filter: brightness(1.5);
-  transition: 1s;
-}
-
-
-/* Botao Dentro do Item Destaque (preco) */
+/* PREÇO DO DESTAQUE */
 
 .destaqueBtn{
   padding: 1vh;
@@ -210,11 +221,11 @@
   transition: 0.5s;
 }
 
+/* DIV dos grupos dos generos */
+
 .generosCarousel {
   padding: 4vh;
 }
-
-/* DIV dos grupos dos generos */
 
 .generos {
   display: flex;
@@ -223,7 +234,7 @@
   gap: 30px;
 }
 
-/* Imagem Dentro das divs GENEROS */
+/* IMAGEM GENEROS */
 
 .generos img {
   border-radius: 20px;
@@ -234,7 +245,7 @@
   filter: brightness(0.5);
 }
 
-/* Texto Dentro das divs Generos */
+/* TEXTO GENEROS */
 
 .generos p {
   cursor: pointer;
@@ -249,7 +260,7 @@
   padding: 10px; /* espaçamento interno do texto */
 }
 
-/* Cada item dentro do grupo GENEROS */
+/* CADA ITEM DO GENEROS */
 
 .genero1 {
   position: relative;
