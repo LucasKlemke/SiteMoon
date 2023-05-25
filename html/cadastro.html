@@ -18,6 +18,7 @@
     <title>Moon - Cadastro</title>
     <!-- SCRIP JAVASCRIPT -->
     <!-- Inserir Script -->
+    <script src="../js/script.js"></script>
     <!-- SCRIPT IONICONS -->
     <script
       type="module"
@@ -27,7 +28,7 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <!-- SCRIPT JAVASCRIPT BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <!------------------>
+    <!-- Estilização pagina cadastro -->
     <style>
       .card{
         border: none;
@@ -84,61 +85,100 @@
      <!-- Conteudo da Pagina -->
 
     <main class="main">
+
+      <!-- Box Conteudo -->
+
     <div style="display: flex; justify-content: center; background-color: rgba(108, 4, 169, 0.634);border-radius: 20px; gap: 10vw; align-items: start;">
-      <!-- Card 1 -->
+
+      <!-- Card 1 (Cadastro) -->
+
       <div class="card" style="width: 25rem;">
         <div class="card-body">
+
           <h1 class="card-title text-white">Cadastro</h1>
           
+          <!-- Formulario Informações Cadastro -->
+
           <form>
+
+            <!-- EMAIL -->
             <div class="form-group">
               <label for="exampleInputEmail1">Email:</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite o email">
             </div>
+
             <br>
+
+            <!-- Usuario -->
             <div class="form-group">
               <label for="exampleInputEmail1">Nome de usuário:</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite o seu nome para exibição">
             </div>
+
             <br>
+
+            <!-- SENHA -->
             <div class="form-group">
               <label for="exampleInputPassword1">Senha:</label>
               <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Digite a senha">
               <small id="passwordlHelp" class="form-text text-white" style="color: red !important; display: none;">Senhas diferentes</small>
             </div>
+
             <br>
+
+            <!-- CONFIRMAR SENHA -->
             <div class="form-group">
               <label for="exampleInputPassword1">Confirmar senha:</label>
               <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirme a senha">
               <small id="passwordlHelp" class="form-text text-white" style="color: red !important; display: none;">Senhas diferentes</small>
             </div>
+
             <br>
+
+            <!-- TERMOS DE SERVIÇO -->
             <div class="form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Aceita os <a href="">termos de serviço</a> ?</label>
+              <label class="form-check-label" for="exampleCheck1">Aceita os <a href="termos.html">termos de serviço</a> ?</label>
             </div>
+
             <br>
+
+            <!-- BOTÃO CADASTRO -->
             <div style="display: flex; justify-content: center;">
               <button type="button" class="btn btn-success btn-lg">Cadastrar</button>
             </div>
           </form>
 
+          <!-- FIM FORMULÁRIO -->
+
         </div>
       </div>
+      
+      <!-- FIM CARD 1 (CADASTRO) -->
+
+      <!-- Card 2 (Login) -->
+
       <div class="card" style="width: 25rem;">
         <div class="card-body">
           <h1 class="card-title text-light">Já possui conta ?</h1>
           <p style="color: rgba(226, 225, 225, 0.848);">Clique no botão abaixo para entrar em sua conta já criada:</p>
+          <!-- BOX BOTAO LOGIN -->
           <div style="display: flex; justify-content: center;">
+            <!-- BOTAO LOGIN -->
           <button type="button" class="btn btn-success btn-lg"><a href="login.html" style="text-decoration: none; color: white;">Entrar</a></button>
           </div>
+          <!-- BOX LOGO -->
           <div  style="display: flex; justify-content: center; padding-top: 4vh; align-items: end;">
+            <!-- LOGO -->
             <h1 style="color: rgb(255, 255, 255); text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.495); cursor: default;">MOON</h1>
           </div>
 
         </div>
       </div>
+      <!-- FIM CARD 2 (LOGIN) -->
+
     </div>
+    <!-- FIM BOX CONTEUDO -->
     
     </main>
 
