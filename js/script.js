@@ -36,8 +36,9 @@ function cadastrar(){
         textoOculto2.classList.add('oculto')
         var checkHelp = document.getElementById("checkHelp");
        checkHelp.classList.add('oculto')
+       limparCampos();
         alert("Usuário Cadastrado !")
-        limparCampos();
+        
     }
 
 
