@@ -200,7 +200,6 @@
 }
 
 .destaque img:hover {
-  filter: brightness(1);
   transition: 0.5s;
 }
 
