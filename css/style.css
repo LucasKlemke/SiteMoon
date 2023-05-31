@@ -163,14 +163,13 @@
 /* < SETAS DO CARROSSEL DO DESTAQUE > */
 
 .carousel-control-next:hover{
-  background-color: rgba(0, 0, 0, 0.5) !important;
+  scale: 1.5 !important;
   transition: 1s;
 }
 
 .carousel-control-prev:hover{
-  background-color: rgba(0, 0, 0, 0.5) !important;
   transition: 1s;
-  scale: 1.1 !important;
+  scale: 1.5 !important;
 }
 
 .generosCarousel .carousel-control-next:hover{

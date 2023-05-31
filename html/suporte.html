@@ -57,13 +57,15 @@
       color: white;
     }
     .BuscaAjuda {
-      
       margin-top: 20px;
       border-radius: 20px;
       height: 50px;
       width: 500px;
       margin-bottom: 40px;
+      color: black;
+      padding: 20px;
     } 
+
     #duvidas{
       justify-content: space-between;
       padding: 20px;
@@ -83,6 +85,21 @@
       margin-left: 15px;
       font-size: 20px;
       
+    }
+
+    .col{
+      height: 20vh;
+      border-radius: 20px;
+      background-color: rgba(63, 5, 117, 0.453);
+    }
+
+    .col:hover{
+      box-shadow: 4px 4px 30px rgba(155, 6, 171, 0.639);
+    }
+
+    .col a{
+      text-decoration: none;
+      color: white;
     }
     
     
@@ -191,41 +208,44 @@
           <input
             class="BuscaAjuda"
             type="text"
-            placeholder="Insira a sua dúvida"
+            placeholder="Buscar por dúvida..."
           />
-          <button style="color: black;"> Enviar</button>
+          <button class="btn btn-success btn-lg mx-2">Buscar</button>
           <div class="freq">
             <h2>Dúvidas frequentes</h2>
         
-            <div class="container text-center">
+            <div class="container text-center my-3">
               <div class="row">
-                <div class="col" id="duvidas">
-                  fre1
+                <div class="col p-3 mx-2">
+                 <a href=""><h4>Não consigo lembrar minha senha.</h4></a>
                 </div>
-                <div class="col-6" id="duvidas">
-                  2 of 3 (wider)
+                <div class="col p-3 mx-2">
+                 <a href=""><h4>Perdi acesso ao meu email.</h4></a>
                 </div>
-                <div class="col" id="duvidas">
-                  3 of 3
-                </div>
-              </div>
-              <div class="row">
-                <div class="col" id="duvidas">
-                  1 of 3
-                </div>
-                <div class="col-5" id="duvidas">
-                  2 of 3 (wider)
-                </div>
-                <div class="col" id="duvidas">
-                  3 of 3
+                <div class="col p-3 mx-2">
+                 <a href=""><h4>Meu método de pagamento não foi aceito.</h4></a>
                 </div>
               </div>
             </div>
-         </div>
+
+            <div class="container text-center my-3">
+              <div class="row">
+                <div class="col p-3 mx-2">
+                 <a href=""><h4>Quanto tempo demora para meu pagamento ser processado ?</h4></a>
+                </div>
+                <div class="col p-3 mx-2">
+                 <a href=""><h4>Aonde receberei o acesso ao meu produto ?</h4></a>
+                </div>
+                <div class="col p-3 mx-2">
+                 <a href=""><h4>Perdi acesso ao meu autenticador de 2 etapas.</h4></a>
+                </div>
+              </div>
+            </div>
+            
 
         </div>
           <br>
-          <div class="Info">
+          <div class="Info text-center">
             <h2>Informações para contato:</h2>
             
             <ion-icon name="mail"></ion-icon> Moon@email.com
