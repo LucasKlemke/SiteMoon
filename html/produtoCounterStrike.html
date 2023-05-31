@@ -22,7 +22,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Moon - Cadastro</title>
     <!-- SCRIP JAVASCRIPT -->
-    <script src="index.js"></script>
+    <script src="../js/produto.js" defer></script>
     <!-- SCRIPT IONICONS -->
     <script
       type="module"
@@ -43,9 +43,50 @@
     <style>
 
       .imagemPrincipal{
-        height: auto;
+        height: 50vh;
         width: 50vw;
-        background-color: blueviolet;
+        background-position: center;
+        background-size: cover  ;
+      }
+
+      /* CLASSESDESTAQUE */
+      
+      .imagemDestaque1{
+        background-image: url(../img/counter-strike.jpeg) !important;
+      }
+
+      .imagemDestaque2{
+        background-image: url(../img/cs\ foto1.png) !important;
+      }
+
+      .imagemDestaque3{
+        background-image: url(../img/cs\ foto3.png) !important;
+      }
+
+      .imagemDestaque4{
+        background-image: url(../img/cs\ foto4.png) !important;
+      }
+
+      /* IMAGENS SECUNDARIAS */
+
+      .imagensSecundarias .imagemDestaque1{
+        background-position: center !important;
+        background-size: cover !important ;
+      }
+
+      .imagensSecundarias .imagemDestaque2{
+        background-position: center !important;
+        background-size: cover !important ;
+      }
+
+      .imagensSecundarias .imagemDestaque3{
+        background-position: center !important;
+        background-size: cover !important ;
+      }
+
+      .imagensSecundarias .imagemDestaque4{
+        background-position: center !important;
+        background-size: cover !important ;
       }
 
       .imagemSecundaria{
@@ -175,8 +216,8 @@
           </div>
           <div class="row">
             <div class="col mx-1 bg-transparent">
-              <div class="imagemPrincipal">
-                <img src="../img/counter-strike.jpeg" alt="">
+              <div id="imagemPrincipal" class="imagemPrincipal imagemDestaque1">
+                
               </div>
             </div>
             <div class="col  mx-1 pt-3 rounded">
@@ -192,25 +233,21 @@
               </div>
             </div>
           </div>
-          <div class="row pt-3">
+          <div class="row pt-3 imagensSecundarias">
             <div class="col g-0 py-3 ps-5 ">
-              <div class="imagemSelect">
-                <img src="../img/counter-strike.jpeg" alt="">
+              <div id="imagemSecundaria1" class="imagemSelect imagemDestaque1 rounded">
               </div>
             </div>
             <div class="col g-0 py-3 ">
-              <div class="imagemSelect">
-                <img src="../img/cs foto1.png" alt="">
+              <div id="imagemSecundaria2" class="imagemSelect imagemDestaque2 rounded">   
               </div>
             </div>
             <div class="col g-0 py-3 ">
-              <div class="imagemSelect">
-                <img src="../img/cs foto3.png" alt="">
+              <div id="imagemSecundaria3" class="imagemSelect imagemDestaque3 rounded">
               </div>
             </div>
             <div class="col g-0 py-3 ">
-              <div class="imagemSelect">
-                <img src="../img/cs foto4.png" alt="">
+              <div id="imagemSecundaria4" class="imagemSelect imagemDestaque4 rounded">
               </div>
             </div>
           </div>
