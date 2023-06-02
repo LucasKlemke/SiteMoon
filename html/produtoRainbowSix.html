@@ -161,6 +161,12 @@
         cursor: default !important;
       }
 
+      .recomendacoes{
+        height: 30vh !important;
+        width: auto;
+        overflow: auto;
+      }
+
     </style>
   </head>
 
@@ -321,48 +327,59 @@
                 <div class="tituloAvaliacoes d-flex ps-5 pt-3">
                   <h3>Geral:</h3><h3 class="px-5 bg-danger mx-5 rounded">NEGATIVAS<ion-icon name="sad-outline"></ion-icon></h3>
                 </div>
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col"></th>
-                      <th scope="col">Usuário</th>
-                      <th scope="col">Análise</th>
-                      <th scope="col">Avaliação</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="bg-dark">
-                      <th scope="row">1</th>
-                      <td>Deapeek</td>
-                      <td class="text-start">Jogo cheio de hackers, muito dificil...</td>
-                      <td><button class="btn btn-danger avaliacao">NEGATIVA</button></td>
-                    </tr>
-                    <tr class="bg-dark">
-                      <th scope="row">2</th>
-                      <td>MarcosGamer69</td>
-                      <td class="text-start">Jogo muito dificil, comunidade muito tóxica.</td>
-                      <td><button class="btn btn-danger avaliacao">NEGATIVA</button></td>
-                    </tr>
-                    <tr class="bg-dark">
-                      <th scope="row">3</th>
-                      <td>NeymarDoR6</td>
-                      <td class="text-start">Jogo super recomendado, horas de diversão !</td>
-                      <td><button class="btn btn-success avaliacao">POSITIVA</button></td>
-                    </tr>
-                    <tr class="bg-dark">
-                      <th scope="row">4</th>
-                      <td>paulo_rosario557</td>
-                      <td class="text-start">Fui banido sem motivo.</td>
-                      <td><button class="btn btn-danger avaliacao">NEGATIVA</button></td>
-                    </tr>
-                    <tr class="bg-dark">
-                      <th scope="row">5</th>
-                      <td>Kidzin666</td>
-                      <td class="text-start">Jogo lixo.</td>
-                      <td><button class="btn btn-danger avaliacao">NEGATIVA</button></td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="recomendacoes">
+
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Usuário</th>
+                        <th scope="col">Análise</th>
+                        <th scope="col">Avaliação</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="bg-dark" style="--bs-bg-opacity: .8;">
+                        <th scope="row">1</th>
+                        <td>Sarto</td>
+                        <td class="text-start">horrível</td>
+                        <td><button class="btn btn-danger avaliacao">NEGATIVA</button></td>
+                      </tr>
+                      <tr class="bg-dark" style="--bs-bg-opacity: .8;">
+                        <th scope="row">2</th>
+                        <td>Mari</td>
+                        <td class="text-start">comprei esse jogo em 2016, joguei por 2 horas depois nunca mais abri.</td>
+                        <td><button class="btn btn-danger avaliacao">NEGATIVA</button></td>
+                      </tr>
+                      <tr class="bg-dark" style="--bs-bg-opacity: .8;">
+                        <th scope="row">3</th>
+                        <td>joaoMatador69</td>
+                        <td class="text-start">O jogo começa a congelar a cada 2 partidas, fica impossível de jogar, e obriga a pessoa a kitar da partida e ter que reiniciar o game.</td>
+                        <td><button class="btn btn-danger avaliacao">NEGATIVA</button></td>
+                      </tr>
+                      <br>
+                      <tr class="bg-dark" style="--bs-bg-opacity: .8;">
+                        <th scope="row">4</th>
+                        <td>Kidzin666</td>
+                        <td class="text-start">Jogo lixo.</td>
+                        <td><button class="btn btn-danger avaliacao">NEGATIVA</button></td>
+                      </tr>
+                      <tr class="bg-dark" style="--bs-bg-opacity: .8;">
+                        <th scope="row">5</th>
+                        <td>marcos_conqueror</td>
+                        <td class="text-start">Jogo legal</td>
+                        <td><button class="btn btn-success avaliacao">POSITIVA</button></td>
+                      </tr>
+                      <tr class="bg-dark" style="--bs-bg-opacity: .8;">
+                        <th scope="row">6</th>
+                        <td>sad_boyLad</td>
+                        <td class="text-start">me diverti muit jogando</td>
+                        <td><button class="btn btn-success avaliacao">POSITIVA</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <small>Role para baixo para ver mais<ion-icon name="caret-down-outline"></ion-icon></small>
               </div>
             </div>
           </div>
