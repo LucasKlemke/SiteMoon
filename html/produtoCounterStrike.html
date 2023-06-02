@@ -75,9 +75,11 @@
 
       .brilho{
         filter: brightness(1) !important;
+        scale: 1.1;
       }
 
       .imagensSecundarias .imagemDestaque1{
+        transition: 1s;
         filter: brightness(0.5);
         background-position: center !important;
         background-size: cover !important ;
@@ -85,12 +87,14 @@
       }
 
       .imagensSecundarias .imagemDestaque1:hover{
-        scale: 1.05;
+        border-radius: 0 !important;
+        scale: 1.1;
         filter: brightness(1);
         transition: .5s;
       }
 
       .imagensSecundarias .imagemDestaque2{
+        transition: 1s;
         filter: brightness(0.5);
         background-position: center !important;
         background-size: cover !important ;
@@ -98,12 +102,14 @@
       }
 
       .imagensSecundarias .imagemDestaque2:hover{
-        scale: 1.05;
+        border-radius: 0 !important;
+        scale: 1.1;
         filter: brightness(1);
         transition: .5s;
       }
 
       .imagensSecundarias .imagemDestaque3{
+        transition: 1s;
         filter: brightness(0.5);
         background-position: center !important;
         background-size: cover !important ;
@@ -111,12 +117,14 @@
       }
 
       .imagensSecundarias .imagemDestaque3:hover{
-        scale: 1.05;
+        border-radius: 0 !important;
+        scale: 1.1;
         filter: brightness(1);
         transition: .5s;
       }
 
       .imagensSecundarias .imagemDestaque4{
+        transition: 1s;
         filter: brightness(0.5);
         background-position: center !important;
         background-size: cover !important ;
@@ -124,7 +132,8 @@
       }
 
       .imagensSecundarias .imagemDestaque4:hover{
-        scale: 1.05;
+        border-radius: 0 !important;
+        scale: 1.1;
         filter: brightness(1);
         transition: .5s;
       }
@@ -270,7 +279,7 @@
                 <div class="preco">
                   <del><h6>R$50,00</h6></del><h3>R$24,99<ion-icon name="flame"></ion-icon></h3>
                 </div>
-                <button class="btn btn-success btn-lg">Comprar</button>
+                <button id="btnComprar" class="btn btn-success btn-lg">Comprar</button>
               </div>
             </div>
           </div>

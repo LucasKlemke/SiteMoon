@@ -77,3 +77,10 @@ function mostrarImagemSecundaria4(){
     $('#imagemSecundaria4').addClass('brilho')
 
 }
+
+const btnComprar = document.getElementById('btnComprar');
+btnComprar.addEventListener('click',direcionar);
+
+function direcionar(){
+    window.location.href = "carrinho.html";
+}
