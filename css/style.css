@@ -47,6 +47,7 @@
 /* LOGO (MOON) HEADER */
 
 .tituloLoja {
+  transition: .5s !important;
   filter: brightness(0.9);
   text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.495);
 }
@@ -60,11 +61,13 @@
 /* LINKS DO HEADER */
 
 .links{
+  transition: 1s !important;
   display: flex;
   margin-left: 2vw;
 }
 
 .linkBtn{
+  transition: 1s !important;
   filter: brightness(0.9);
 }
 
@@ -78,6 +81,7 @@
 /* BARRA DE PESQUISA */
 
 .form-control-dark{
+  transition: .5s !important;
   filter: brightness(0.6);
   background-color: rgba(61, 6, 112, 0.485) !important;
   color: white !important;
@@ -104,6 +108,7 @@
 /* BOTÃO DE LOGIN */
 
 .btn-outline-light{
+  transition: .5s !important;
   filter: brightness(0.9);
 }
 
@@ -119,6 +124,7 @@
 /* Botao Cadastro */
 
 .btn-warning{
+  transition: .5s !important;
   filter: brightness(0.9);
   border-color:rgb(255, 255, 255) !important;
   color: #ffffff !important;
@@ -198,10 +204,6 @@
   filter: brightness(0.7);
 }
 
-.destaque img:hover {
-  transition: 0.5s;
-}
-
 /* TEXTO DENTRO DO ITEM EM DESTAQUE */
 
 .carousel-caption {
@@ -212,6 +214,7 @@
 /* PREÇO DO DESTAQUE */
 
 .destaqueBtn{
+  transition: 1s !important;
   padding: 1vh;
   font-size: 10vh;
   background-color: rgba(128, 0, 0, 0.639);
@@ -269,14 +272,17 @@
 /* CADA ITEM DO GRUPO DE GENEROS */
 
 .genero1 {
+  transition: 1s;
   position: relative;
 }
 
 .genero2 {
+  transition: 1s;
   position: relative;
 }
 
 .genero3 {
+  transition: 1s;
   position: relative;
 }
 
