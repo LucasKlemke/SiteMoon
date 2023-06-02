@@ -303,6 +303,7 @@
 /* PRODUTOS */
 
 .storeItem{
+  cursor: pointer;
   background-color: rgba(52, 3, 98, 0.738) !important;
   border-color: rgb(108, 6, 204) ;
 }
