@@ -2,7 +2,7 @@ const cs = document.getElementById('cs');
 const r6 = document.getElementById('r6');
 
 function alerta(){
-    alert('O jogo não existe');
+    alert('PRODUTO DE EXEMPLO (não finalizado) ');
 }
 
 cs.addEventListener('click', function(){
@@ -12,3 +12,5 @@ cs.addEventListener('click', function(){
 r6.addEventListener('click', function(){
   window.location.href = "produtoRainbowSix.html";
 })
+
+

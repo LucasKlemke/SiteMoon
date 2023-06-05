@@ -109,16 +109,12 @@
 
 .btn-outline-light{
   transition: .5s !important;
-  filter: brightness(0.9);
 }
 
 .btn-outline-light:hover{
-  filter: brightness(2);
-  background-color: transparent !important;
-  text-shadow: 2px 2px 10px white;
-  box-shadow: 2px 2px 10px white;
-  scale: 1.1;
-  transition: .5s;
+  background-color:  rgba(118, 6, 222, 0.738) !important;
+  scale: 1.05;
+  border-color: rgba(118, 6, 222, 0.738) !important ;
 }
 
 /* Botao Cadastro */
@@ -132,12 +128,9 @@
 }
 
 .btn-warning:hover{
-  filter: brightness(2);
-  background-color: transparent !important;
-  text-shadow: 2px 2px 10px white;
-  box-shadow: 2px 2px 10px white;
-  scale: 1.1;
-  transition: .5s;
+  background-color:  rgba(118, 6, 222, 0.738) !important;
+  scale: 1.05;
+  border-color: rgba(118, 6, 222, 0.738) !important ;
 }
 
 
@@ -197,6 +190,7 @@
   justify-content: center;
 }
 
+
 /* IMAGEM DO ITEM EM DESTAQUE */
 
 .destaque img {
@@ -222,10 +216,8 @@
 }
 
 .destaqueBtn:hover{
-  border-radius: 10px;
-  scale: 1.1;
-  box-shadow: 2px 2px 5px rgba(182, 96, 215, 0.406);
-  transition: 0.5s;
+  transition: .5s;
+  background-color: rgba(255, 0, 0, 0.584);
 }
 
 /* GENEROS */
@@ -309,16 +301,16 @@
 /* PRODUTOS */
 
 .storeItem{
+  transition: .5s;
   cursor: pointer;
   background-color: rgba(52, 3, 98, 0.738) !important;
   border-color: rgb(108, 6, 204) ;
 }
 
 .storeItem:hover{
-  border: 2px solid rgba(0, 140, 255, 0.355);
-  /* border-color: transparent; */
+  transition: .5s;
   border-radius: 50px;
-  background-color: rgba(68, 4, 129, 0.802) !important;
+  background-color: rgba(132, 0, 255, 0.802) !important;
 }
 
 /* BARRA DE NAVEGAÇÃO EM BAIXO DOS PRODUTOS */
@@ -342,6 +334,9 @@ del{
   color: white;
 }
 
+tr{
+  border-bottom: transparent !important;
+}
 
 
 /* --------------------------------------------------------------------------------- */
