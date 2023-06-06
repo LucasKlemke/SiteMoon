@@ -39,6 +39,57 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <style>
+    .painel{
+      padding: 6px;
+      background: rgba(108, 4, 169, 0.634);
+      background-color: rgba(108, 4, 169, 0.634);
+      border-radius: 20px;
+    }
+    .dentro{
+      margin-top: 40px;
+      margin-left: 60px;
+    }
+    .buscar{
+        width: 50vh;
+        height: 4vh;
+        border-radius: 15px;
+        transition: .5s !important;
+        filter: brightness(0.6);
+        background-color: rgba(61, 6, 112, 0.485) !important;
+        color: white !important;
+        border-color: rgba(179, 107, 247, 0.436) !important;
+      }
+
+      .buscar:focus{
+        filter: brightness(1);
+      }
+
+      .buscar::placeholder{
+        color: rgba(255, 255, 255, 0.515)!important;
+      }
+      .search-container {
+        position: relative;
+     }
+          
+      .search-container input[type="text"] {
+        padding-left: 30px; /* Espaçamento para acomodar o ícone */
+     }
+          
+      .search-container ion-icon {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);   
+     }
+      
+
+   
+    
+    
+    
+    
+    </style>
   </head>
 
   <!-- Inicio Body -->
@@ -133,9 +184,26 @@
     <!-- Conteudo da Pagina -->
 
     <main class="main">
+      <div class="painel">
       <h1>Lista de desejos</h1>
-    </main>
+        <div class="dentro">
+          
+          <div class="search-container">
+            <ion-icon name="search"></ion-icon>
+            <input class="buscar" type="text" placeholder="Pesquisar">
+          </div>
+          
+          
 
+
+
+
+
+
+        </div>
+      </div>
+    </main>
+      
     <!-- Fim Conteudo -->
   </body>
 </html>
