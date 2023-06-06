@@ -67,13 +67,15 @@
 }
 
 .linkBtn{
-  transition: 1s !important;
+  transition: .3s !important;
   filter: brightness(0.9);
+  border-bottom: 2px solid transparent;
 }
 
 .linkBtn:hover{
+  border-bottom: 2px solid rgba(255, 255, 255, 0.673);
   text-shadow: 3px 3px 15px rgb(255, 255, 255);
-  transition: .5s;
+  transition: .3s;
   filter: brightness(2);
   
 }
@@ -160,6 +162,7 @@
   transition: 1s;
 }
 /* < SETAS DO CARROSSEL DO DESTAQUE > */
+
 
 .carousel-control-next:hover{
   scale: 1.5 !important;

@@ -20,9 +20,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Moon - Suporte</title>
+    <title>Moon - Termos e Condições</title>
     <!-- SCRIP JAVASCRIPT -->
-    <script defer src="../js/index.js"></script>
+    <!-- Inserir Script -->
     <!-- SCRIPT IONICONS -->
     <script
       type="module"
@@ -39,77 +39,13 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
-
+    <!------------------>
     <style>
-    .painel{
-      background: rgba(108, 4, 169, 0.634);
-      background-color: rgba(108, 4, 169, 0.634);
-      border-radius: 20px;
-    }
-    .principal{
-      justify-content: center;
-      text-align: center;
-    }
-    
-    h1{
-      text-align: center;
-      padding: 2vh;
-      color: white;
-    }
-    .BuscaAjuda {
-      margin-top: 20px;
-      border-radius: 20px;
-      height: 50px;
-      width: 500px;
-      margin-bottom: 40px;
-      color: black;
-      padding: 20px;
-    } 
-
-    #duvidas{
-      justify-content: space-between;
-      padding: 20px;
-      border-radius: 15px;
-      cursor: pointer;
-      text-align: center;
-      background-color: purple;
-      width: 200px;
-      height: 150px;
-      margin: 20px;
-    }
-    .freq{
-      text-align: center;
-    }
-    .Info{
-      text-align: start;
-      margin-left: 15px;
-      font-size: 20px;
-      
-    }
-
-    .col{
-      transition: .5s;
-      cursor: pointer;
-      height: 20vh;
-      border-radius: 20px;
-      background-color: rgba(63, 5, 117, 0.453);
-    }
-
-    .col:hover{
-      transition: .5s;
-      background-color: rgba(135, 7, 255, 0.453);
-    }
-
-    .col a{
-      text-decoration: none;
-      color: white;
-    }
-    
-    
-    
-    
+      .card {
+        border: none;
+        background-color: transparent;
+      }
     </style>
-
   </head>
 
   <!-- Inicio Body -->
@@ -161,7 +97,11 @@
                   Lista de Desejos <ion-icon name="star"></ion-icon
                 ></a>
               </li>
-              <li><a href="carrinho.html" class="nav-link px-2 text-white linkBtn">Carrinho <ion-icon name="cart"></ion-icon></a></li>
+              <li>
+                <a href="carrinho.html" class="nav-link px-2 text-white linkBtn"
+                  >Carrinho <ion-icon name="cart"></ion-icon
+                ></a>
+              </li>
             </div>
           </ul>
 
@@ -204,59 +144,34 @@
     <!-- Conteudo da Pagina -->
 
     <main class="main">
+<style>
+    .inputEmail {
+      margin-bottom: 40px;
+      color: black;
+      width: 20vw;
+      height: 4vh;
+      padding-left: 1vw;
+    } 
+</style>
 
-      <div class="painel">
-        <div class="principal">
-          <h1 >Como podemos ajudar?</h1>
-
-          <input
-            class="BuscaAjuda"
-            type="text"
-            placeholder="Buscar por dúvida..."
-          />
-          <button class="btn btn-success btn-lg mx-2">Buscar</button>
-          <div class="freq">
-            <h2>Dúvidas frequentes</h2>
-        
-            <div class="container text-center my-3">
-              <div class="row">
-                <div class="col p-3 mx-2">
-                 <a href=""><h4>Não consigo lembrar minha senha.</h4></a>
-                </div>
-                <div class="col p-3 mx-2">
-                 <a href=""><h4>Perdi acesso ao meu email.</h4></a>
-                </div>
-                <div class="col p-3 mx-2">
-                 <a href=""><h4>Meu método de pagamento não foi aceito.</h4></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="container text-center my-3">
-              <div class="row">
-                <div class="col p-3 mx-2">
-                 <a href=""><h4>Quanto tempo demora para meu pagamento ser processado ?</h4></a>
-                </div>
-                <div class="col p-3 mx-2">
-                 <a href=""><h4>Aonde receberei o acesso ao meu produto ?</h4></a>
-                </div>
-                <div class="col p-3 mx-2">
-                 <a href=""><h4>Perdi acesso ao meu autenticador de 2 etapas.</h4></a>
-                </div>
-              </div>
-            </div>
-            
-
+      <div
+        style="
+          background-color: rgba(68, 8, 125, 0.447);
+          padding: 3rem;
+          border-radius: 30px;
+          display: flex;
+          align-items: start;
+          flex-direction: column;
+        "
+      >
+        <h1>Recuperação de Senha <ion-icon name="lock-closed"></ion-icon></h1>
+        <br>
+        <div>
+        <ion-icon name="send"></ion-icon>
+        <input type="email" name="email" id="email" class="inputEmail rounded" placeholder="Insira o seu email...">
+        <button class="btn btn-success" onclick="alert('Email Enviado')">Enviar</button>
         </div>
-          <br>
-          <div class="Info text-center">
-            <h2>Informações para contato:</h2>
-            
-            <ion-icon name="mail"></ion-icon> Moon@email.com
-            <br>
-            <ion-icon name="call"></ion-icon> 47 9983-2837
-          </div>
-          <br>
+        Sera enviado um email para redefinição da senha, verifique a caixa de entrada e spam.
       </div>
     </main>
 

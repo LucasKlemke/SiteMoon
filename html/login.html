@@ -22,7 +22,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Moon - Login</title>
     <!-- SCRIP JAVASCRIPT -->
-    <!-- Inserir Script -->
+    <script src="../js/login.js" defer></script>
     <!-- SCRIPT IONICONS -->
     <script
       type="module"
@@ -97,6 +97,11 @@
                   Lista de Desejos <ion-icon name="star"></ion-icon
                 ></a>
               </li>
+              <li>
+                <a href="carrinho.html" class="nav-link px-2 text-white linkBtn"
+                  >Carrinho <ion-icon name="cart"></ion-icon
+                ></a>
+              </li>
             </div>
           </ul>
 
@@ -156,26 +161,40 @@
 
             <form>
               <div class="form-group">
+                <small
+                  id="complete1"
+                  class="oculto"
+                  class="*"
+                  style="color: red"
+                  >*</small
+                >
                 <label for="exampleInputEmail1">Email:</label>
                 <input
                   type="email"
                   class="form-control"
-                  id="exampleInputEmail1"
+                  id="email"
                   aria-describedby="emailHelp"
                   placeholder="Digite o email"
                 />
               </div>
               <div class="form-group">
+                <small
+                  id="complete2"
+                  class="oculto"
+                  class="*"
+                  style="color: red"
+                  >*</small
+                >
                 <label for="exampleInputPassword1">Senha:</label>
                 <input
                   type="password"
                   class="form-control"
-                  id="exampleInputPassword1"
+                  id="password"
                   placeholder="Digite a senha"
                 />
                 <small id="passwordlHelp" class="form-text text-white"
                   >Problemas para conectar ?
-                  <a href="">Esqueci a senha</a></small
+                  <a href="esqueciasenha.html">Esqueci a senha</a></small
                 >
               </div>
               <div class="form-check">
@@ -189,10 +208,26 @@
                 >
               </div>
               <div style="display: flex; justify-content: center">
-                <button type="button" class="btn btn-success btn-lg">
+                <button
+                  type="button"
+                  id="loginBtn"
+                  class="btn btn-success btn-lg"
+                >
                   Entrar
                 </button>
               </div>
+              <small
+                  id="complete3"
+                  class="form-text text-white oculto"
+                  style="color: red !important"
+                  >* Você deve preencher todos os campos.</small
+                >
+                <small
+                  id="complete4"
+                  class="form-text text-white oculto"
+                  style="color: red !important"
+                  >* Email ou senha incorretos.</small
+                >
             </form>
           </div>
         </div>
