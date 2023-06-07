@@ -41,7 +41,7 @@
     ></script>
     <style>
     .painel{
-      padding: 6px;
+      padding-bottom: 40px;
       background: rgba(108, 4, 169, 0.634);
       background-color: rgba(108, 4, 169, 0.634);
       border-radius: 20px;
@@ -49,6 +49,7 @@
     .dentro{
       margin-top: 40px;
       margin-left: 60px;
+      margin-right: 60px;
     }
     .buscar{
         width: 50vh;
@@ -82,10 +83,27 @@
         left: 10px;
         transform: translateY(-50%);   
      }
-      
-
-   
-    
+     .storeItemContent {
+        display: flex;
+        align-items: center;
+    }
+          
+     .itemImage {
+        margin-right: 60px;
+    }
+          
+     .itemImage img {
+        margin-left: 30px;
+        width: 200px;
+        height: 100px; 
+    }
+          
+      .itemDetails {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+          
     
     
     
@@ -185,12 +203,63 @@
 
     <main class="main">
       <div class="painel">
-      <h1>Lista de desejos</h1>
+      <h1 style="margin-left: 60px; padding-top: 20px;">Lista de desejos</h1>
         <div class="dentro">
+          <br>
           
           <div class="search-container">
             <ion-icon name="search"></ion-icon>
             <input class="buscar" type="text" placeholder="Pesquisar">
+          </div>
+          <br>
+
+          
+          <div>
+
+
+            <div class="storeItem" id="cs">
+              <div class="storeItemContent">
+                  <div class="itemImage">
+                      <a href="produtoCounterStrike.html"><img src="/img/cs main 2.png" alt="" class="img-fluid rounded"></a>
+                  </div>
+                  <div class="itemDetails">
+                      <div class="itemName">
+                          <a href="produtoCounterStrike.html" class="linkjogoLoja">Counter-Strike: Global Offensive</a>
+                      </div>
+                      <div class="itemCategory">Ação | Multijogador</div>
+                      <div class="itemPrice">
+                          <del>R$50,00</del>
+                          <p>R$24,99<ion-icon name="flame"></ion-icon></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <br>
+          
+   
+          
+    
+        
+                
+              
+              
+                <div class="storeItem" id="r6">
+                  <div scope="col"><a href="produtoRainbowSix.html"><img src="/img/r6main.png" alt="" class="img-fluid rounded w-25"></a></div>
+                  <div scope="col"><a href="produtoRainbowSix.html" class="linkjogoLoja">Tom Clancy's Rainbow Six® Siege</a></div>
+                  <div scope="col">Ação | Multijogador</div>
+                  <div scope="col"><del>R$89,90</del> R$30,00 <ion-icon name="flame"></ion-icon></div>
+                </div>
+                <br>
+
+              
+              
+                <div class="storeItem randomgame" onclick="alerta()">
+                  <div scope="col"><a href=""><img src="/img/aventura.jpeg" alt="" class="img-fluid rounded w-25"></a></div>
+                  <div scope="col"><a href="" class="linkjogoLoja">Random Game</a></div>
+                  <div scope="col">Ação | Aventura</div>
+                  <div scope="col"><del>R$150,00</del><p>R$45,99<ion-icon name="flame"></ion-icon></p></div>
+                </div>
+
           </div>
           
           
