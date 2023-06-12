@@ -41,6 +41,8 @@
     ></script>
     <style>
     .painel{
+      margin-left: 120px;
+      margin-right: 120px;
       padding-bottom: 40px;
       background: rgba(108, 4, 169, 0.634);
       background-color: rgba(108, 4, 169, 0.634);
@@ -74,7 +76,7 @@
      }
           
       .search-container input[type="text"] {
-        padding-left: 30px; /* Espaçamento para acomodar o ícone */
+        padding-left: 30px;
      }
           
       .search-container ion-icon {
@@ -83,26 +85,59 @@
         left: 10px;
         transform: translateY(-50%);   
      }
-     .storeItemContent {
-        display: flex;
-        align-items: center;
+  
+    .storeItem{
+      width: 90vh;
+      border-radius: 4px;
     }
-          
-     .itemImage {
-        margin-right: 60px;
-    }
-          
-     .itemImage img {
-        margin-left: 30px;
-        width: 200px;
-        height: 100px; 
-    }
-          
       .itemDetails {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
+
+
+    .storeItemContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.itemImage {
+    margin-right: 10px;
+}
+
+.itemImage img {
+    width: 180px; /* Defina o tamanho desejado para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.itemDetails {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.itemPrice {
+    margin-top: 5px;
+}
+
+.buyButton {
+    margin-left: 10px;
+}
+
+.greenButton {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.greenButton:hover {
+    background-color: darkgreen;
+}
           
     
     
@@ -209,58 +244,88 @@
           
           <div class="search-container">
             <ion-icon name="search"></ion-icon>
-            <input class="buscar" type="text" placeholder="Pesquisar">
+            <input class="buscar" type="text" placeholder="Pesquisar pelo nome ou tag do produto">
           </div>
           <br>
 
           
-          <div>
+          
 
+          <div class="storeItem" id="cs">
+            <div class="storeItemContent">
+                <div class="itemImage">
+                    <a href="produtoCounterStrike.html"><img src="/img/cs main 2.png" alt="" class="img-fluid rounded"></a>
+                </div>
+                <div class="itemDetails">
+                    <div class="itemName">
+                        <a href="produtoCounterStrike.html" class="linkjogoLoja">Counter-Strike: Global Offensive</a>
+                    </div>
+                    <div class="itemCategory">Ação | Multijogador</div>
+                </div>
+                    <div class="itemPrice">
+                        <del>R$50,00</del>
+                        <p>R$24,99<ion-icon name="flame"></ion-icon></p>
+                    </div>
+                    
+                <div class="buyButton">
+                    <button class="greenButton">Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+          <br>
+          
+          <div class="storeItem" id="r6">
+            <div class="storeItemContent">
+                <div class="itemImage">
+                    <a href="produtoRainbowSix.html"><img src="/img/r6main.png" alt="" class="img-fluid rounded"></a>
+                </div>
+                <div class="itemDetails">
+                    <div class="itemName">
+                        <a href="produtoRainbowSix.html" class="linkjogoLoja">Tom Clancy's Rainbow Six® Siege</a>
+                    </div>
+                    <div class="itemCategory">Ação | Multijogador</div>
+                </div>
+                    <div class="itemPrice">
+                        <del>R$89,90</del> R$30,00 <ion-icon name="flame"></ion-icon>
+                    </div>
+                    
+            </div>
+            <div class="buyButton">
+                <button class="greenButton">Adicionar ao carrinho</button>
+            </div>
+        </div>
+        
+        
+        <br>
 
-            <div class="storeItem" id="cs">
-              <div class="storeItemContent">
-                  <div class="itemImage">
-                      <a href="produtoCounterStrike.html"><img src="/img/cs main 2.png" alt="" class="img-fluid rounded"></a>
+        <div class="storeItem randomgame" onclick="alerta()">
+          <div class="storeItemContent">
+              <div class="itemImage">
+                  <a href=""><img src="/img/aventura.jpeg" alt="" class="img-fluid rounded"></a>
+              </div>
+              <div class="itemDetails">
+                  <div class="itemName">
+                      <a href="" class="linkjogoLoja">Random Game</a>
                   </div>
-                  <div class="itemDetails">
-                      <div class="itemName">
-                          <a href="produtoCounterStrike.html" class="linkjogoLoja">Counter-Strike: Global Offensive</a>
-                      </div>
-                      <div class="itemCategory">Ação | Multijogador</div>
-                      <div class="itemPrice">
-                          <del>R$50,00</del>
-                          <p>R$24,99<ion-icon name="flame"></ion-icon></p>
-                      </div>
+                  <div class="itemCategory">Ação | Aventura</div>
+                  </div>
+                  <div class="itemPrice">
+                      <del>R$150,00</del>
+                      <p>R$45,99<ion-icon name="flame"></ion-icon></p>
                   </div>
               </div>
           </div>
-          <br>
-          
-   
-          
-    
-        
-                
-              
-              
-                <div class="storeItem" id="r6">
-                  <div scope="col"><a href="produtoRainbowSix.html"><img src="/img/r6main.png" alt="" class="img-fluid rounded w-25"></a></div>
-                  <div scope="col"><a href="produtoRainbowSix.html" class="linkjogoLoja">Tom Clancy's Rainbow Six® Siege</a></div>
-                  <div scope="col">Ação | Multijogador</div>
-                  <div scope="col"><del>R$89,90</del> R$30,00 <ion-icon name="flame"></ion-icon></div>
-                </div>
-                <br>
-
-              
-              
-                <div class="storeItem randomgame" onclick="alerta()">
-                  <div scope="col"><a href=""><img src="/img/aventura.jpeg" alt="" class="img-fluid rounded w-25"></a></div>
-                  <div scope="col"><a href="" class="linkjogoLoja">Random Game</a></div>
-                  <div scope="col">Ação | Aventura</div>
-                  <div scope="col"><del>R$150,00</del><p>R$45,99<ion-icon name="flame"></ion-icon></p></div>
-                </div>
-
+          <div class="buyButton">
+              <button class="greenButton">Adicionar ao carrinho</button>
           </div>
+      </div>
+      
+
+               
+          
           
           
 
