@@ -81,10 +81,11 @@
       }
 
       .itemInner{
+        cursor: pointer;
         display: flex;
         background-color: rgba(52, 3, 98, 0.738);
         width: 67vw;
-        height: 20vh;
+        height: 15vh;
       }
 
       .itemInner:hover{
@@ -115,8 +116,16 @@
         background-size: cover;
       }
 
+      .image4{
+        background-image: url(../img/terror.jpeg);
+        width: 15vw;
+        height: 15vh;
+        background-position: center;
+        background-size: cover;
+      }
+
       .name{
-        width: 20%;
+        width: 30%;
       }
 
       .genre{
@@ -124,11 +133,11 @@
       }
 
       .price{
-        width: 20%;
+        width: 10%;
       }
 
       .button{
-        width: 15%;
+        width: 30%;
       }
       
 
@@ -238,7 +247,7 @@
         <div class="itens mt-3">
           <div class="item" style="display: flex;">
             <div class="itemInner  rounded my-1">
-            <div class="image1 m-2 rounded"style="align-self: center; text-align: center;">
+            <div class="image1 m-0 rounded"style="align-self: center; text-align: center;">
             </div>
             <div class="name" style="align-self: center; text-align: center;">
               <p>Tom Clancy's Rainbow Six® Siege</p>
@@ -258,7 +267,7 @@
 
         <div class="item" style="display: flex;">
           <div class="itemInner  rounded my-1">
-          <div class="image2 m-2 rounded"style="align-self: center; text-align: center;">
+          <div class="image2 m-0 rounded"style="align-self: center; text-align: center;">
           </div>
           <div class="name" style="align-self: center; text-align: center;">
             <p>Counter-Strike: Global-Offensive</p>
@@ -278,7 +287,7 @@
 
       <div class="item" style="display: flex;">
         <div class="itemInner  rounded my-1">
-        <div class="image3 m-2 rounded"style="align-self: center; text-align: center;">
+        <div class="image3 m-0 rounded"style="align-self: center; text-align: center;">
         </div>
         <div class="name" style="align-self: center; text-align: center;">
           <p>Random Game</p>
@@ -295,6 +304,26 @@
       </div>
       <h1 style="align-self: center;"><ion-icon name="reorder-four-outline"></ion-icon></h1>
     </div>
+
+    <div class="item" style="display: flex;">
+      <div class="itemInner  rounded my-1">
+      <div class="image4 m-0 rounded"style="align-self: center; text-align: center;">
+      </div>
+      <div class="name" style="align-self: center; text-align: center;">
+        <p>Random Game</p>
+      </div>
+      <div class="genre" style="align-self: center; text-align: center;">
+        <p>Terror | Sobrevivência</p>
+      </div>
+      <div class="price" style="align-self: center; text-align: center;">
+        <p>R$99,99</p>
+      </div>
+      <div class="button pr-3" style="align-self: center; text-align: center;">
+        <button class="btn btn-success">ADICIONAR AO CARRINHO</button>
+      </div>     
+    </div>
+    <h1 style="align-self: center;"><ion-icon name="reorder-four-outline"></ion-icon></h1>
+  </div>
 
         </div>
         <h5><i><a href="index.html#explorar" style="color: white;">Adicionar novos jogos à lista de desejos +</a></i></h5>
