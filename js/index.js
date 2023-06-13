@@ -5,6 +5,10 @@ function alerta(){
     alert('PRODUTO DE EXEMPLO (não finalizado) ');
 }
 
+function alerta2(){
+  alert('NÃO POSSUIMOS MAIS PRODUTOS (botão ilustrativo)')
+}
+
 cs.addEventListener('click', function(){
   window.location.href = "produtoCounterStrike.html";
 })
