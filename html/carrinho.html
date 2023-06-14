@@ -1,235 +1,197 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <!-- LINK GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=K2D&display=swap"
-      rel="stylesheet"
-    />
-    <!-- LINK CSS -->
-    <link rel="stylesheet" href="/css/style.css" />
-    <!-- LINK CSS BOOTSTRAP -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
-    />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Moon - Carrinho</title>
-    <!-- SCRIP JAVASCRIPT -->
-    <!-- Inserir Script -->
-    <!-- SCRIPT IONICONS -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <!-- SCRIPT IONICONS -->
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-    <!-- SCRIPT JAVASCRIPT BOOTSTRAP -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"
-    ></script>
-    <style>
-      ::-webkit-scrollbar {
-    width: 0px;
-}
 
-      .containerMain{
-       background-color:rgba(108, 4, 169, 0.634);
-       width: 75vw;
-       height: 85vh;
-       border-radius: 30px;
-      }
+<head>
+  <!-- LINK GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=K2D&display=swap" rel="stylesheet" />
+  <!-- LINK CSS -->
+  <link rel="stylesheet" href="/css/style.css" />
+  <!-- LINK CSS BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moon - Carrinho</title>
+  <!-- SCRIP JAVASCRIPT -->
+  <!-- Insira aqui -->
+  <!-- SCRIPT IONICONS -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <!-- SCRIPT IONICONS -->
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <!-- SCRIPT JAVASCRIPT BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <style>
+    ::-webkit-scrollbar {
+      width: 0px;
+    }
 
-      .itens{
-        width: 75vw;
-        overflow: auto;
-        display: flex;
-        height: 35vh;
-        flex-direction: column;
-      }
+    .containerMain {
+      background-color: rgba(108, 4, 169, 0.634);
+      width: 75vw;
+      height: 85vh;
+      border-radius: 30px;
+    }
 
-      .itemInner{
-        cursor: pointer;
-        display: flex;
-        background-color: rgba(52, 3, 98, 0.738);
-        width: 67vw;
-        height: 15vh;
-      }
+    .itens {
+      width: 75vw;
+      overflow: auto;
+      display: flex;
+      height: 35vh;
+      flex-direction: column;
+    }
 
-      .itemInner:hover{
-        background-color: rgb(104, 7, 215);
-      }
+    .itemInner {
+      cursor: pointer;
+      display: flex;
+      background-color: rgba(52, 3, 98, 0.738);
+      width: 67vw;
+      height: 15vh;
+    }
 
-      .image1{
-        background-image: url(../img/rainbow4k.jpeg);
-        width: 15vw;
-        height: 15vh;
-        background-position: center;
-        background-size: cover;
-      }
+    .itemInner:hover {
+      background-color: rgb(104, 7, 215);
+    }
 
-      .image2{
-        background-image: url(../img/counter-strike.jpeg);
-        width: 15vw;
-        height: 15vh;
-        background-position: center;
-        background-size: cover;
-      }
+    .image1 {
+      background-image: url(../img/rainbow4k.jpeg);
+      width: 15vw;
+      height: 15vh;
+      background-position: center;
+      background-size: cover;
+    }
 
-      .name{
-        width: 30%;
-      }
+    .image2 {
+      background-image: url(../img/counter-strike.jpeg);
+      width: 15vw;
+      height: 15vh;
+      background-position: center;
+      background-size: cover;
+    }
 
-      .genre{
-        width: 20%;
-      }
+    .name {
+      width: 30%;
+    }
 
-      .price{
-        width: 10%;
-      }
+    .genre {
+      width: 20%;
+    }
 
-      .button{
-        width: 30%;
-      }
-      .buttonBuy{
-        width: 49%;
-      }
-      
+    .price {
+      width: 10%;
+    }
 
-    </style>
+    .button {
+      width: 30%;
+    }
 
-  </head>
+    .buttonBuy {
+      width: 49%;
+    }
+  </style>
 
-  <!-- Inicio Body -->
-  <body class="background">
-    <!-- Header -->
+</head>
 
-    <header class="p-3 bgheader text-white fixed-top">
-      <div class="container">
-        <div
-          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
-        >
-          <!-- Links Header -->
+<!-- Inicio Body -->
 
-          <ul
-            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
-          >
+<body class="background">
+  <!-- Header -->
+
+  <header class="p-3 bgheader text-white fixed-top">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <!-- Links Header -->
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li>
+            <a href="index.html" class="nav-link px-2 text-white tituloLoja">
+              <h2>MOON<ion-icon name="moon"></ion-icon></h2>
+            </a>
+          </li>
+          <div class="links">
             <li>
-              <a href="index.html" class="nav-link px-2 text-white tituloLoja"
-                ><h2>MOON<ion-icon name="moon"></ion-icon></h2
-              ></a>
+              <a href="index.html#carouselExample" class="nav-link px-2 text-white linkBtn">
+                Promoções <ion-icon name="flame"></ion-icon></a>
             </li>
-            <div class="links">
-              <li>
-                <a
-                  href="index.html#carouselExample"
-                  class="nav-link px-2 text-white linkBtn"
-                >
-                  Promoções <ion-icon name="flame"></ion-icon
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="index.html#explorar"
-                  class="nav-link px-2 text-white linkBtn"
-                >
-                  Explorar <ion-icon name="storefront-sharp"></ion-icon
-                ></a>
-              </li>
-              <li>
-                <a href="suporte.html" class="nav-link px-2 text-white linkBtn">
-                  Suporte <ion-icon name="shield-checkmark-sharp"></ion-icon
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="listadedesejos.html"
-                  class="nav-link px-2 text-white linkBtn"
-                >
-                  Lista de Desejos <ion-icon name="star"></ion-icon
-                ></a>
-              </li>
-              <li><a href="carrinho.html" class="nav-link px-2 text-white linkBtn">Carrinho <ion-icon name="cart"></ion-icon></a></li>
-            </div>
-          </ul>
-
-          <!-- Search Bar -->
-
-          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-            <input
-              type="search"
-              class="form-control form-control-dark"
-              placeholder="Procurar por jogos... "
-              aria-label="Search"
-              list="gameList"
-            />
-            <datalist id="gameList">
-              <option value="Counter-Strike: Global-Offensive"></option>
-              <option value="Tom Clancy's Rainbow Six Siege"></option>
-            </datalist>
-          </form>
-
-          <!-- Login \ Cadastrar -->
-
-          <div class="text-end">
-            <button type="button" class="btn btn-outline-light me-2">
-              <a href="login.html"
-                >Login<ion-icon name="person-sharp"></ion-icon
-              ></a>
-            </button>
-            <button type="button" class="btn btn-warning">
-              <a href="cadastro.html"
-                >Cadastro<ion-icon name="person-add"></ion-icon
-              ></a>
-            </button>
+            <li>
+              <a href="index.html#explorar" class="nav-link px-2 text-white linkBtn">
+                Explorar <ion-icon name="storefront-sharp"></ion-icon></a>
+            </li>
+            <li>
+              <a href="suporte.html" class="nav-link px-2 text-white linkBtn">
+                Suporte <ion-icon name="shield-checkmark-sharp"></ion-icon></a>
+            </li>
+            <li>
+              <a href="listadedesejos.html" class="nav-link px-2 text-white linkBtn">
+                Lista de Desejos <ion-icon name="star"></ion-icon></a>
+            </li>
+            <li><a href="carrinho.html" class="nav-link px-2 text-white linkBtn">Carrinho <ion-icon
+                  name="cart"></ion-icon></a></li>
           </div>
+        </ul>
+
+        <!-- Search Bar -->
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+          <input type="search" class="form-control form-control-dark" placeholder="Procurar por jogos... "
+            aria-label="Search" list="gameList" />
+          <datalist id="gameList">
+            <option value="Counter-Strike: Global-Offensive"></option>
+            <option value="Tom Clancy's Rainbow Six Siege"></option>
+          </datalist>
+        </form>
+
+        <!-- Login \ Cadastrar -->
+
+        <div class="text-end">
+          <button type="button" class="btn btn-outline-light me-2">
+            <a href="login.html">Login<ion-icon name="person-sharp"></ion-icon></a>
+          </button>
+          <button type="button" class="btn btn-warning">
+            <a href="cadastro.html">Cadastro<ion-icon name="person-add"></ion-icon></a>
+          </button>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- Fim Header -->
+  <!-- Fim Header -->
 
-    <!-- Conteudo da Pagina -->
+  <!-- Conteudo da Pagina -->
 
-    <main class="main">
-    
-        <h1 class=""><ion-icon name="cart"></ion-icon> Carrinho de compras</h1>
-        <br>
-        <div class="itens mt-3">
-          <div class="item" style="display: flex;">
-            <div class="itemInner  rounded my-1">
-            <div class="image1 m-0 rounded"style="align-self: center; text-align: center;">
-            </div>
-            <div class="name" style="align-self: center; text-align: center;">
-              <p>Tom Clancy's Rainbow Six® Siege</p>
-            </div>
-            <div class="genre" style="align-self: center; text-align: center;">
-              <p>Ação | Multijogador</p>
-            </div>
-            <div class="price" style="align-self: center; text-align: center;">
-              <del>R$89,00</del><p> R$30,00<ion-icon name="flame"></ion-icon></p>
-            </div>
-            <div class="button pr-3" style="align-self: center; text-align: center;">
-              <a href="comprafinalizada.html"><button class="btn btn-success">COMPRAR PRODUTO</button></a>
-            </div>     
+  <main class="main">
+
+    <h1 class=""><ion-icon name="cart"></ion-icon> Carrinho de compras</h1>
+    <br>
+    <div class="itens mt-3">
+      <div class="item" style="display: flex;">
+        <div class="itemInner  rounded my-1">
+          <div class="image1 m-0 rounded" style="align-self: center; text-align: center;">
           </div>
-          <h1 style="align-self: center;"><ion-icon name="close-outline"></ion-icon></h1>
+          <div class="name" style="align-self: center; text-align: center;">
+            <p>Tom Clancy's Rainbow Six® Siege</p>
+          </div>
+          <div class="genre" style="align-self: center; text-align: center;">
+            <p>Ação | Multijogador</p>
+          </div>
+          <div class="price" style="align-self: center; text-align: center;">
+            <del>R$89,00</del>
+            <p> R$30,00<ion-icon name="flame"></ion-icon></p>
+          </div>
+          <div class="button pr-3" style="align-self: center; text-align: center;">
+            <a href="comprafinalizada.html"><button class="btn btn-success">COMPRAR PRODUTO</button></a>
+          </div>
         </div>
+        <h1 style="align-self: center;"><ion-icon name="close-outline"></ion-icon></h1>
+      </div>
 
-        <div class="item" style="display: flex;">
-          <div class="itemInner  rounded my-1">
-          <div class="image2 m-0 rounded"style="align-self: center; text-align: center;">
+      <div class="item" style="display: flex;">
+        <div class="itemInner  rounded my-1">
+          <div class="image2 m-0 rounded" style="align-self: center; text-align: center;">
           </div>
           <div class="name" style="align-self: center; text-align: center;">
             <p>Counter-Strike: Global-Offensive</p>
@@ -238,24 +200,29 @@
             <p>Ação | Multijogador</p>
           </div>
           <div class="price" style="align-self: center; text-align: center;">
-            <del>R$50,00</del><p> R$24,99<ion-icon name="flame"></ion-icon></p>
+            <del>R$50,00</del>
+            <p> R$24,99<ion-icon name="flame"></ion-icon></p>
           </div>
           <div class="button pr-3" style="align-self: center; text-align: center;">
             <a href="comprafinalizada.html"><button class="btn btn-success">COMPRAR PRODUTO</button></a>
-          </div>     
+          </div>
         </div>
         <h1 style="align-self: center;"><ion-icon name="close-outline"></ion-icon></h1>
       </div>
 
-        </div>
-        <div class="mt-3" style="display: flex;justify-content: space-between;">
-        <h5><i><a href="index.html#explorar" style="color: white;text-align: center;">Adicionar novos jogos ao carrinho</a></i></h5>
-        <div class="buttonBuy" style="align-self: center; text-align: center;">
-          <a href="comprafinalizada.html"><button class="btn btn-success btn-lg"><H4>FINALIZAR COMPRA</H3></button></a>
-        </div>     
+    </div>
+    <div class="mt-3" style="display: flex;justify-content: space-between;">
+      <h5><i><a href="index.html#explorar" style="color: white;text-align: center;">Adicionar novos jogos ao
+            carrinho</a></i></h5>
+      <div class="buttonBuy" style="align-self: center; text-align: center;">
+        <a href="comprafinalizada.html"><button class="btn btn-success btn-lg">
+            <H4>FINALIZAR COMPRA</H3>
+          </button></a>
       </div>
-    </main>
+    </div>
+  </main>
 
-    <!-- Fim Conteudo -->
-  </body>
+  <!-- Fim Conteudo -->
+</body>
+
 </html>

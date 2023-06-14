@@ -144,15 +144,15 @@
     <!-- Conteudo da Pagina -->
 
     <main class="main">
-<style>
-    .inputEmail {
-      margin-bottom: 40px;
-      color: black;
-      width: 20vw;
-      height: 4vh;
-      padding-left: 1vw;
-    } 
-</style>
+      <style>
+        .inputEmail {
+          margin-bottom: 40px;
+          color: black;
+          width: 20vw;
+          height: 4vh;
+          padding-left: 1vw;
+        }
+      </style>
 
       <div
         style="
@@ -165,13 +165,22 @@
         "
       >
         <h1>Recuperação de Senha <ion-icon name="lock-closed"></ion-icon></h1>
-        <br>
+        <br />
         <div>
-        <ion-icon name="send"></ion-icon>
-        <input type="email" name="email" id="email" class="inputEmail rounded" placeholder="Insira o seu email...">
-        <button class="btn btn-success" onclick="alert('Email Enviado')">Enviar</button>
+          <ion-icon name="send"></ion-icon>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="inputEmail rounded"
+            placeholder="Insira o seu email..."
+          />
+          <button class="btn btn-success" onclick="alert('Email Enviado')">
+            Enviar
+          </button>
         </div>
-        Sera enviado um email para redefinição da senha, verifique a caixa de entrada e spam.
+        Sera enviado um email para redefinição da senha, verifique a caixa de
+        entrada e spam.
       </div>
     </main>
 

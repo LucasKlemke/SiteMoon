@@ -22,8 +22,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Moon - Suporte</title>
     <!-- SCRIP JAVASCRIPT -->
-    <script defer src="../js/index.js"></script>
-    <script src="../js/wishlist.js"></script>
+    <!-- INSIRA AQUI -->
     <!-- SCRIPT IONICONS -->
     <script
       type="module"
@@ -42,17 +41,17 @@
     ></script>
     <style>
       ::-webkit-scrollbar {
-    width: 0px;
-}
-
-      .containerMain{
-        background-color:rgba(108, 4, 169, 0.634);
-       width: 75vw;
-       height: 75vh;
-       border-radius: 30px;
+        width: 0px;
       }
 
-      .searchBar{
+      .containerMain {
+        background-color: rgba(108, 4, 169, 0.634);
+        width: 75vw;
+        height: 75vh;
+        border-radius: 30px;
+      }
+
+      .searchBar {
         border-radius: 15px;
         padding-left: 1vw;
         height: 4vh;
@@ -62,18 +61,18 @@
         border: 1px solid rgb(82, 27, 135);
       }
 
-      .searchBar::placeholder{
+      .searchBar::placeholder {
         color: rgba(255, 255, 255, 0.45);
       }
 
-      .searchBar:focus{
+      .searchBar:focus {
         filter: brightness(1.3);
         outline: 0;
         border: 1px solid rgb(82, 27, 135) !important;
-        box-shadow:  5px 5px 30px rgba(132, 4, 236, 0.759);
+        box-shadow: 5px 5px 30px rgba(132, 4, 236, 0.759);
       }
 
-      .itens{
+      .itens {
         width: 75vw;
         overflow: auto;
         display: flex;
@@ -81,7 +80,7 @@
         flex-direction: column;
       }
 
-      .itemInner{
+      .itemInner {
         cursor: pointer;
         display: flex;
         background-color: rgba(52, 3, 98, 0.738);
@@ -89,11 +88,11 @@
         height: 15vh;
       }
 
-      .itemInner:hover{
+      .itemInner:hover {
         background-color: rgb(104, 7, 215);
       }
 
-      .image1{
+      .image1 {
         background-image: url(../img/rainbow4k.jpeg);
         width: 15vw;
         height: 15vh;
@@ -101,7 +100,7 @@
         background-size: cover;
       }
 
-      .image2{
+      .image2 {
         background-image: url(../img/counter-strike.jpeg);
         width: 15vw;
         height: 15vh;
@@ -109,7 +108,7 @@
         background-size: cover;
       }
 
-      .image3{
+      .image3 {
         background-image: url(../img/aventura.jpeg);
         width: 15vw;
         height: 15vh;
@@ -117,7 +116,7 @@
         background-size: cover;
       }
 
-      .image4{
+      .image4 {
         background-image: url(../img/terror.jpeg);
         width: 15vw;
         height: 15vh;
@@ -125,25 +124,22 @@
         background-size: cover;
       }
 
-      .name{
+      .name {
         width: 30%;
       }
 
-      .genre{
+      .genre {
         width: 20%;
       }
 
-      .price{
+      .price {
         width: 10%;
       }
 
-      .button{
+      .button {
         width: 30%;
       }
-      
-
     </style>
-
   </head>
 
   <!-- Inicio Body -->
@@ -195,7 +191,11 @@
                   Lista de Desejos <ion-icon name="star"></ion-icon
                 ></a>
               </li>
-              <li><a href="carrinho.html" class="nav-link px-2 text-white linkBtn">Carrinho <ion-icon name="cart"></ion-icon></a></li>
+              <li>
+                <a href="carrinho.html" class="nav-link px-2 text-white linkBtn"
+                  >Carrinho <ion-icon name="cart"></ion-icon
+                ></a>
+              </li>
             </div>
           </ul>
 
@@ -238,99 +238,139 @@
     <!-- Conteudo da Pagina -->
 
     <main class="main">
-
       <div class="containerMain px-5 py-3">
-        <h1 class=""><ion-icon name="person-sharp"></ion-icon
-          > Sua Lista de Desejos</h1>
-        <br>
+        <h1 class="">
+          <ion-icon name="person-sharp"></ion-icon> Sua Lista de Desejos
+        </h1>
+        <br />
         <div class="search">
-          <input class="searchBar" type="search" name="" id="" placeholder="Procurar por jogos na lista de desejos...">
+          <input
+            class="searchBar"
+            type="search"
+            name=""
+            id=""
+            placeholder="Procurar por jogos na lista de desejos..."
+          />
         </div>
         <div class="itens mt-3">
-          <div class="item draggable" style="display: flex;">
-            <div class="itemInner  rounded my-1">
-            <div class="image1 m-0 rounded"style="align-self: center; text-align: center;">
+          <div class="item draggable" style="display: flex">
+            <div class="itemInner rounded my-1">
+              <div
+                class="image1 m-0 rounded"
+                style="align-self: center; text-align: center"
+              ></div>
+              <div class="name" style="align-self: center; text-align: center">
+                <p>Tom Clancy's Rainbow Six® Siege</p>
+              </div>
+              <div class="genre" style="align-self: center; text-align: center">
+                <p>Ação | Multijogador</p>
+              </div>
+              <div class="price" style="align-self: center; text-align: center">
+                <del>R$89,00</del>
+                <p>R$30,00<ion-icon name="flame"></ion-icon></p>
+              </div>
+              <div
+                class="button pr-3"
+                style="align-self: center; text-align: center"
+              >
+                <button class="btn btn-success">ADICIONAR AO CARRINHO</button>
+              </div>
             </div>
-            <div class="name" style="align-self: center; text-align: center;">
-              <p>Tom Clancy's Rainbow Six® Siege</p>
+            <h1 style="align-self: center">
+              <ion-icon name="reorder-four-outline" class="icone"></ion-icon>
+            </h1>
+          </div>
+
+          <div class="item draggable" style="display: flex">
+            <div class="itemInner rounded my-1">
+              <div
+                class="image2 m-0 rounded"
+                style="align-self: center; text-align: center"
+              ></div>
+              <div class="name" style="align-self: center; text-align: center">
+                <p>Counter-Strike: Global-Offensive</p>
+              </div>
+              <div class="genre" style="align-self: center; text-align: center">
+                <p>Ação | Multijogador</p>
+              </div>
+              <div class="price" style="align-self: center; text-align: center">
+                <del>R$50,00</del>
+                <p>R$24,99<ion-icon name="flame"></ion-icon></p>
+              </div>
+              <div
+                class="button pr-3"
+                style="align-self: center; text-align: center"
+              >
+                <button class="btn btn-success">ADICIONAR AO CARRINHO</button>
+              </div>
             </div>
-            <div class="genre" style="align-self: center; text-align: center;">
-              <p>Ação | Multijogador</p>
+            <h1 style="align-self: center">
+              <ion-icon name="reorder-four-outline" class="icone"></ion-icon>
+            </h1>
+          </div>
+
+          <div class="item draggable" style="display: flex">
+            <div class="itemInner rounded my-1">
+              <div
+                class="image3 m-0 rounded"
+                style="align-self: center; text-align: center"
+              ></div>
+              <div class="name" style="align-self: center; text-align: center">
+                <p>Random Game</p>
+              </div>
+              <div class="genre" style="align-self: center; text-align: center">
+                <p>Ação | Aventura</p>
+              </div>
+              <div class="price" style="align-self: center; text-align: center">
+                <p>R$99,99</p>
+              </div>
+              <div
+                class="button pr-3"
+                style="align-self: center; text-align: center"
+              >
+                <button class="btn btn-success">ADICIONAR AO CARRINHO</button>
+              </div>
             </div>
-            <div class="price" style="align-self: center; text-align: center;">
-              <del>R$89,00</del><p> R$30,00<ion-icon name="flame"></ion-icon></p>
+            <h1 style="align-self: center">
+              <ion-icon name="reorder-four-outline" class="icone"></ion-icon>
+            </h1>
+          </div>
+
+          <div class="item draggable" style="display: flex">
+            <div class="itemInner rounded my-1">
+              <div
+                class="image4 m-0 rounded"
+                style="align-self: center; text-align: center"
+              ></div>
+              <div class="name" style="align-self: center; text-align: center">
+                <p>Random Game</p>
+              </div>
+              <div class="genre" style="align-self: center; text-align: center">
+                <p>Terror | Sobrevivência</p>
+              </div>
+              <div class="price" style="align-self: center; text-align: center">
+                <p>R$99,99</p>
+              </div>
+              <div
+                class="button pr-3"
+                style="align-self: center; text-align: center"
+              >
+                <button class="btn btn-success">ADICIONAR AO CARRINHO</button>
+              </div>
             </div>
-            <div class="button pr-3" style="align-self: center; text-align: center;">
-              <button class="btn btn-success">ADICIONAR AO CARRINHO</button>
-            </div>     
+            <h1 style="align-self: center">
+              <ion-icon name="reorder-four-outline" class="icone"></ion-icon>
+            </h1>
           </div>
-          <h1 style="align-self: center;"><ion-icon name="reorder-four-outline" class="icone"></ion-icon></h1>
         </div>
-
-        <div class="item draggable" style="display: flex;">
-          <div class="itemInner  rounded my-1">
-          <div class="image2 m-0 rounded"style="align-self: center; text-align: center;">
-          </div>
-          <div class="name" style="align-self: center; text-align: center;">
-            <p>Counter-Strike: Global-Offensive</p>
-          </div>
-          <div class="genre" style="align-self: center; text-align: center;">
-            <p>Ação | Multijogador</p>
-          </div>
-          <div class="price" style="align-self: center; text-align: center;">
-            <del>R$50,00</del><p> R$24,99<ion-icon name="flame"></ion-icon></p>
-          </div>
-          <div class="button pr-3" style="align-self: center; text-align: center;">
-            <button class="btn btn-success">ADICIONAR AO CARRINHO</button>
-          </div>     
-        </div>
-        <h1 style="align-self: center;"><ion-icon name="reorder-four-outline"  class="icone"></ion-icon></h1>
+        <h5>
+          <i
+            ><a href="index.html#explorar" style="color: white"
+              >Adicionar novos jogos à lista de desejos +</a
+            ></i
+          >
+        </h5>
       </div>
-
-      <div class="item draggable" style="display: flex;">
-        <div class="itemInner  rounded my-1">
-        <div class="image3 m-0 rounded"style="align-self: center; text-align: center;">
-        </div>
-        <div class="name" style="align-self: center; text-align: center;">
-          <p>Random Game</p>
-        </div>
-        <div class="genre" style="align-self: center; text-align: center;">
-          <p>Ação | Aventura</p>
-        </div>
-        <div class="price" style="align-self: center; text-align: center;">
-          <p>R$99,99</p>
-        </div>
-        <div class="button pr-3" style="align-self: center; text-align: center;">
-          <button class="btn btn-success">ADICIONAR AO CARRINHO</button>
-        </div>     
-      </div>
-      <h1 style="align-self: center;"><ion-icon name="reorder-four-outline" class="icone"></ion-icon></h1>
-    </div>
-
-    <div class="item draggable" style="display: flex;">
-      <div class="itemInner  rounded my-1">
-      <div class="image4 m-0 rounded"style="align-self: center; text-align: center;">
-      </div>
-      <div class="name" style="align-self: center; text-align: center;">
-        <p>Random Game</p>
-      </div>
-      <div class="genre" style="align-self: center; text-align: center;">
-        <p>Terror | Sobrevivência</p>
-      </div>
-      <div class="price" style="align-self: center; text-align: center;">
-        <p>R$99,99</p>
-      </div>
-      <div class="button pr-3" style="align-self: center; text-align: center;">
-        <button class="btn btn-success">ADICIONAR AO CARRINHO</button>
-      </div>     
-    </div>
-    <h1 style="align-self: center;"><ion-icon name="reorder-four-outline" class="icone"></ion-icon></h1>
-  </div>
-
-        </div>
-        <h5><i><a href="index.html#explorar" style="color: white;">Adicionar novos jogos à lista de desejos +</a></i></h5>
-      </div>
-      
     </main>
 
     <!-- Fim Conteudo -->
