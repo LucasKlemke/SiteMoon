@@ -1,0 +1,351 @@
+/* ------------------------------------------------------------------------------- */
+/* ---------------------------COMANDOS GERAIS DA PÁGINA--------------------------- */
+/* ------------------------------------------------------------------------------- */
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "K2D";
+  color: white;
+}
+
+/* CLASSE PARA OCULTAR ITENS */
+
+.oculto{
+  display: none;
+}
+
+/* PLANO DE FUNDO DA PÁGINA */
+
+.background {
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-image: url(/img/moonbg.jpg);
+  background-color: rgb(40, 21, 51);
+}
+
+
+/* ------------------------------------------------------------------------------------- */
+/*----------------------------------COMEÇO HEADER--------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+
+
+/* Background Header */
+
+.bgheader {
+  background: rgb(42, 0, 55);
+  background: linear-gradient(
+    180deg,
+    rgba(42, 0, 55, 1) 50%,
+    rgba(126, 5, 156, 0.162) 95%
+  );
+}
+
+/* LOGO (MOON) HEADER */
+
+.tituloLoja {
+  transition: .5s !important;
+  filter: brightness(0.9);
+  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.495);
+}
+
+.tituloLoja:hover{
+  filter: brightness(2);
+  transition: .5s;
+  text-shadow: 3px 3px 15px rgb(255, 255, 255);
+}
+
+/* LINKS DO HEADER */
+
+.links{
+  transition: 1s !important;
+  display: flex;
+  margin-left: 2vw;
+}
+
+.linkBtn{
+  transition: .3s !important;
+  filter: brightness(0.9);
+  border-bottom: 2px solid transparent;
+}
+
+.linkBtn:hover{
+  border-bottom: 2px solid rgba(255, 255, 255, 0.673);
+  text-shadow: 3px 3px 15px rgb(255, 255, 255);
+  transition: .3s;
+  filter: brightness(2);
+  
+}
+
+/* BARRA DE PESQUISA */
+
+.form-control-dark{
+  transition: .5s !important;
+  filter: brightness(0.6);
+  background-color: rgba(61, 6, 112, 0.485) !important;
+  color: white !important;
+  border-color: rgba(179, 107, 247, 0.436) !important;
+}
+
+.form-control-dark:focus{
+  filter: brightness(1);
+}
+
+.form-control-dark::placeholder{
+  color: rgba(255, 255, 255, 0.515)!important;
+}
+
+/* ----------------------- */
+/* BOTÕES LOGIN E CADASTRO*/
+/* ---------------------- */
+
+.text-end a{
+  text-decoration: none;
+  color: white;
+}
+
+/* BOTÃO DE LOGIN */
+
+.btn-outline-light{
+  transition: .5s !important;
+}
+
+.btn-outline-light:hover{
+  background-color:  rgba(118, 6, 222, 0.738) !important;
+  scale: 1.05;
+  border-color: rgba(118, 6, 222, 0.738) !important ;
+}
+
+/* Botao Cadastro */
+
+.btn-warning{
+  transition: .5s !important;
+  filter: brightness(0.9);
+  border-color:rgb(255, 255, 255) !important;
+  color: #ffffff !important;
+  background-color: transparent !important;
+}
+
+.btn-warning:hover{
+  background-color:  rgba(118, 6, 222, 0.738) !important;
+  scale: 1.05;
+  border-color: rgba(118, 6, 222, 0.738) !important ;
+}
+
+
+/* ------------------------------------------------------------------------------- */
+/* -----------------------------------FIM HEADER---------------------------------- */
+/* ------------------------------------------------------------------------------- */
+
+
+
+/* --------------------------------------------------------------------------------- */
+/*----------------------------------- INDEX.HTML ----------------------------------- */
+/* --------------------------------------------------------------------------------- */
+
+
+/* ------------------- */
+/* Conteudo da Pagina */
+/* ------------------ */
+
+.main{
+  padding: 18vh 20vh;
+}
+
+/* DESTAQUE */
+
+.carroselDestaques:hover{
+  filter: brightness(1.5);
+  transition: 1s;
+}
+/* < SETAS DO CARROSSEL DO DESTAQUE > */
+
+
+.carousel-control-next:hover{
+  scale: 1.5 !important;
+  transition: 1s;
+}
+
+.carousel-control-prev:hover{
+  transition: 1s;
+  scale: 1.5 !important;
+}
+
+.generosCarousel .carousel-control-next:hover{
+  background-color: transparent !important;
+  scale: 1.1 !important;
+}
+
+.generosCarousel .carousel-control-prev:hover{
+  background-color: transparent !important;
+  scale: 1.1 !important;
+}
+
+/* ITEM EM DESTAQUE */
+
+.destaque {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* IMAGEM DO ITEM EM DESTAQUE */
+
+.destaque img {
+  cursor: pointer;
+  filter: brightness(0.7);
+}
+
+/* TEXTO DENTRO DO ITEM EM DESTAQUE */
+
+.carousel-caption {
+  filter: brightness(0.6);
+  background-color: rgba(0, 0, 0, 0.449);
+}
+
+/* PREÇO DO DESTAQUE */
+
+.destaqueBtn{
+  transition: 1s !important;
+  padding: 1vh;
+  font-size: 10vh;
+  background-color: rgba(128, 0, 0, 0.639);
+  border: none;
+}
+
+.destaqueBtn:hover{
+  transition: .5s;
+  background-color: rgba(255, 0, 0, 0.584);
+}
+
+/* GENEROS */
+
+.generosCarousel {
+  padding: 4vh;
+}
+
+/* GRUPO DE GENEROS */
+
+.generos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+/* IMAGEM GENEROS */
+
+.generos img {
+  border-radius: 20px;
+  opacity: 70%;
+  width: 19rem;
+  height: 10rem;
+  cursor: pointer;
+  filter: brightness(0.5);
+}
+
+/* TEXTO GENEROS */
+
+.generos p {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff; /* cor do texto */
+  font-size: 24px; /* tamanho da fonte */
+  font-weight: bold; /* peso da fonte */
+  text-align: center; /* alinhamento do texto */
+  padding: 10px; /* espaçamento interno do texto */
+}
+
+/* CADA ITEM DO GRUPO DE GENEROS */
+
+.genero1 {
+  transition: 1s;
+  position: relative;
+}
+
+.genero2 {
+  transition: 1s;
+  position: relative;
+}
+
+.genero3 {
+  transition: 1s;
+  position: relative;
+}
+
+.genero1:hover{
+  opacity: 200%;
+  transition: 0.5s;
+  filter: brightness(2);
+}
+
+.genero2:hover{
+  opacity: 200%;
+  transition: 0.5s;
+  filter: brightness(2);
+}
+
+.genero3:hover{
+  opacity: 200%;
+  transition: 0.5s;
+  filter: brightness(2);
+}
+
+/* EXPLORAR/PROMOÇÕES */
+
+/* PRODUTOS */
+
+.storeItem{
+  transition: .5s;
+  cursor: pointer;
+  background-color: rgba(52, 3, 98, 0.738) !important;
+  border-color: rgb(108, 6, 204) ;
+}
+
+.storeItem:hover{
+  transition: .5s;
+  border-radius: 50px;
+  background-color: rgba(132, 0, 255, 0.802) !important;
+}
+
+/* BARRA DE NAVEGAÇÃO EM BAIXO DOS PRODUTOS */
+
+.page-link{
+  background-color: rgba(70, 4, 106, 0.54) !important;
+  color: white !important;
+  border-color: blueviolet !important;
+}
+
+/* PREÇO ORIGINAL PROMOÇÃO */
+
+del{
+  color: red;
+}
+
+/* LINK DOS PRODUTOS */
+
+.linkjogoLoja{
+  text-decoration: none;
+  color: white;
+}
+
+tr{
+  border-bottom: transparent !important;
+}
+
+
+/* --------------------------------------------------------------------------------- */
+/*----------------------------------- FIM INDEX.HTML ------------------------------- */
+/* --------------------------------------------------------------------------------- */
+
+
+
+

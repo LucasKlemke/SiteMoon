@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- LINK GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=K2D&display=swap"
+      rel="stylesheet"
+    />
+    <!-- LINK CPSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- LINK CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moon - HomePage</title>
+    <!-- SCRIP JAVASCRIPT -->
+    <script src="../js/index.js" defer></script>
+    <!-- SCRIPT IONICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <!-- SCRIPT IONICONS -->
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- SCRIPT JAVASCRIPT BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </head>
+
+
+   <!-- Inicio Body -->
+  <body class="background">
+
+    <!-- Header -->
+
+    <header class="p-3 bgheader text-white fixed-top">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        
+          <!-- Links Header -->
+
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#" class="nav-link px-2 text-white tituloLoja"><h2>MOON<ion-icon name="moon"></ion-icon></h2></a></li>
+            <div class="links">
+            <li><a href="#carouselExample" class="nav-link px-2 text-white linkBtn"> Promoções <ion-icon name="flame"></ion-icon></a></li>
+            <li><a href="#explorar" class="nav-link px-2 text-white linkBtn"> Explorar <ion-icon name="storefront-sharp"></ion-icon></a></li>
+            <li><a href="suporte.html" class="nav-link px-2 text-white linkBtn"> Suporte <ion-icon name="shield-checkmark-sharp"></ion-icon></a></li>
+            <li><a href="listadedesejos.html" class="nav-link px-2 text-white linkBtn"> Lista de Desejos <ion-icon name="star"></ion-icon></a></li>
+            <li><a href="carrinho.html" class="nav-link px-2 text-white linkBtn">Carrinho <ion-icon name="cart"></ion-icon></a></li>
+            </div>
+          </ul>
+          
+          <!-- Search Bar -->   
+
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+              <input type="search" class="form-control form-control-dark" placeholder="Procurar por jogos... " aria-label="Search" list="gameList" id="searchBar">
+              <datalist id="gameList">
+                <option value="Counter-Strike: Global-Offensive"></option>
+                <option value="Tom Clancy's Rainbow Six Siege"></option>
+              </datalist>
+            </form>
+
+          <!-- Login \ Cadastrar -->
+
+          <div class="text-end">
+            <button type="button" class="btn btn-outline-light me-2"><a href="login.html">Login<ion-icon name="person-sharp"></ion-icon></a></button>
+            <button type="button" class="btn btn-warning"><a href="cadastro.html">Cadastro<ion-icon name="person-add"></ion-icon></a></button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Fim Header -->
+    
+
+     <!-- Conteudo da Pagina -->
+
+    <main class="main">
+      <h1>Destaques <ion-icon name="moon"></ion-icon></h1>
+      
+      <!-- Carrossel Destaques -->
+      
+      <div class="carroselDestaques">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+
+           <!-- Primeiro Item Destaques -->
+
+          <div class="carousel-item active">
+            <a href="produtoRainbowSix.html">
+            <div class="destaque">
+              
+              <img src="/img/Rainbow-SixMain.jpeg" alt="" class="d-block w-100"/>
+              
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Tom Clancy's Rainbow Six® Siege</h2>
+              <p>Tiro | FPS | Multiplayer | Estratégia</p>
+              <button class="destaqueBtn"><h5><del>R$89,90</del></h5><h4>R$30,00<ion-icon name="flame"></ion-icon></h4></button>
+            </div>
+            </a>
+          </div>
+
+          <!-- Segundo Item Destaques -->
+
+          <div class="carousel-item">
+            <a href="produtoCounterStrike.html">
+            <div class="destaque">
+              
+              <img src="/img/counter-strike.jpeg" alt="" class="d-block w-100"/>
+              
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Counter-Strike : Global Offensive</h2>
+              <p>Tiro | FPS | Multiplayer | Estratégia</p>
+              <button class="destaqueBtn"><h5><del>R$50,00</del></h5><h4>R$24,99<ion-icon name="flame"></ion-icon></h4</button>
+            </div>
+          </div>
+        </a>
+
+          <!-- Botoes De Controle do Carrossel Destaque -->
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        
+         <!-- Fim Botoes de Controle do Carrossel Destaque -->
+          </div> 
+      </div>
+    </div>
+
+   
+
+       
+
+      <!-- Fim Carrossel Destaque -->
+
+      <h2>Gêneros</h2>
+      
+       <!-- Carrossel Generos -->
+
+      <div class="generosCarousel">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+
+               <!-- Primeiro Grupo de Generos -->
+
+              <div class="generos">
+                <div class="genero1">
+                  <img src="/img/aventura.jpeg" alt="Imagem" class="d-block w-100"/>
+                  <p>AVENTURA</p>
+                </div>
+                <div class="genero2">
+                  <img src="/img/corrida.jpeg" alt="Imagem" class="d-block w-100"/>
+                  <p>CORRIDA</p>
+                </div>
+                <div class="genero3">
+                  <img src="/img/terror.jpeg" alt="Imagem" class="d-block w-100"/>
+                  <p>HORROR</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+
+               <!-- Segundo Grupo de Generos -->
+
+              <div class="generos">
+                <div class="genero1">
+                  <img src="/img/estrategia.jpeg" alt="Imagem" class="d-block w-100"/>
+                  <p>ESTRATÉGIA</p>
+                </div>
+                <div class="genero2">
+                  <img src="/img/acao.jpeg" alt="Imagem" class="d-block w-100"/>
+                  <p>AÇÃO</p>
+                </div>
+                <div class="genero3">
+                  <img src="/img/plataforma.jpeg" alt="Imagem" class="d-block w-100"/>
+                  <p>PLATAFORMA</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <!-- Botoes De Controle do Carrossel Generos -->
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" style="justify-content: flex-start;">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next" style="justify-content: flex-end;">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+          <!-- Fim Botoes De Controle do Carrossel Generos -->
+
+        </div>
+      </div>
+
+      <!-- Fim Carrosel Generos -->
+
+      <hr>
+
+      <!-- Produtos Promocao -->
+
+      <div class="container">
+      <h1>Promoções<ion-icon name="flame"></ion-icon></h1>
+
+      <!-- Tabela Promocao -->
+         
+            <table class="table">
+              <thead>
+                <tr>
+                  <th><h5>IMAGEM</h5></th>
+                  <th><h5>PRODUTO</h5></th>
+                  <th><h5>GÊNERO</h5></th>
+                  <th><h5>PREÇO</h5></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="storeItem" id="cs">
+                  <th scope="col"><a href="produtoCounterStrike.html"><img src="/img/cs main 2.png" alt="" class="img-fluid rounded w-25"></a></th>
+                  <th scope="col"><a href="produtoCounterStrike.html" class="linkjogoLoja">Counter-Strike: Global Offensive</a></th>
+                  <th scope="col">Ação | Multijogador</th>
+                  <th scope="col"><del>R$50,00</del><p>R$24,99<ion-icon name="flame"></ion-icon></p> </th>
+                </tr>
+                <tr class="storeItem" id="r6">
+                  <th scope="col"><a href="produtoRainbowSix.html"><img src="/img/r6main.png" alt="" class="img-fluid rounded w-25"></a></th>
+                  <th scope="col"><a href="produtoRainbowSix.html" class="linkjogoLoja">Tom Clancy's Rainbow Six® Siege</a></th>
+                  <th scope="col">Ação | Multijogador</th>
+                  <th scope="col"><del>R$89,90</del> R$30,00 <ion-icon name="flame"></ion-icon></th>
+                </tr>
+                <tr class="storeItem randomgame" onclick="alerta()">
+                  <th scope="col"><a href=""><img src="/img/aventura.jpeg" alt="" class="img-fluid rounded w-25"></a></th>
+                  <th scope="col"><a href="" class="linkjogoLoja">Random Game</a></th>
+                  <th scope="col">Ação | Aventura</th>
+                  <th scope="col"><del>R$150,00</del><p>R$45,99<ion-icon name="flame"></ion-icon></p></th>
+                </tr>
+                <tr class="storeItem randomgame" onclick="alerta()">
+                  <th scope="col"><a href=""><img src="/img/aventura.jpeg" alt="" class="img-fluid rounded w-25"></a></th>
+                  <th scope="col"><a href="" class="linkjogoLoja">Random Game</a></th>
+                  <th scope="col">Ação | Aventura</th>
+                  <th scope="col"><del>R$150,00</del><p>R$45,99<ion-icon name="flame"></ion-icon></p></th>
+                </tr><tr class="storeItem randomgame" onclick="alerta()">
+                  <th scope="col"><a href=""><img src="/img/aventura.jpeg" alt="" class="img-fluid rounded w-25"></a></th>
+                  <th scope="col"><a href="" class="linkjogoLoja">Random Game</a></th>
+                  <th scope="col">Ação | Aventura</th>
+                  <th scope="col"><del>R$150,00</del><p>R$45,99<ion-icon name="flame"></ion-icon></p></th>
+                </tr><tr class="storeItem randomgame" onclick="alerta()">
+                  <th scope="col"><a href=""><img src="/img/aventura.jpeg" alt="" class="img-fluid rounded w-25"></a></th>
+                  <th scope="col"><a href="" class="linkjogoLoja">Random Game</a></th>
+                  <th scope="col">Ação | Aventura</th>
+                  <th scope="col"><del>R$150,00</del><p>R$45,99<ion-icon name="flame"></ion-icon></p></th>
+                </tr>
+              </tbody>
+            </table>
+          
+            <!-- Fim Tabela Promocao -->
+
+            <!-- Navbar Promocao -->
+
+            <nav aria-label="Navegação da tabela" id="explorar">
+              <ul class="pagination justify-content-center">
+                <li class="page-item active">
+                  <a class="page-link" href="#carouselExample" onclick="alerta2()" tabindex="-1" aria-disabled="true">Anterior</a>
+                </li>
+                <li class="page-item active" aria-current="page">
+                  <a class="page-link" href="#carouselExample" onclick="alerta2()">1</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#carouselExample" onclick="alerta2()">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#carouselExample" onclick="alerta2()">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#carouselExample" onclick="alerta2()">...22</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#carouselExample" onclick="alerta2()">Próxima</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          
+          <!-- Fim Navbar Promocao -->
+
+      <hr>
+
+          <!-- Explorar -->
+
+      <div class="container">
+      <h1>Explorar<ion-icon name="storefront-sharp"></ion-icon></h1>
+
+          <!-- Tabela Explorar -->
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th><h5>IMAGEM</h5></th>
+              <th><h5>PRODUTO</h5></th>
+              <th><h5>GÊNERO</h5></th>
+              <th><h5>PREÇO</h5></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="storeItem" onclick="alerta()">
+              <th scope="col"><a href=""><img src="/img/aventura.jpeg" alt="" class="img-fluid rounded w-25"></a></th>
+              <th scope="col"><a href="" class="linkjogoLoja">Random Game</a></th>
+              <th scope="col">Explorador | Aventura</th>
+              <th scope="col"><p>R$150,99</p></th>
+            </tr>
+            <tr class="storeItem randomgame" onclick="alerta()">
+              <th scope="col"><a href=""><img src="/img/corrida.jpeg" alt="" class="img-fluid rounded w-25"></a></th>
+              <th scope="col"><a href="" class="linkjogoLoja">Random Game</a></th>
+              <th scope="col">Corrida | Simulador</th>
+              <th scope="col"><p>R$150,99</p></th>
+            </tr>
+            <tr class="storeItem randomgame" onclick="alerta()">
+              <th scope="col"><a href=""><img src="/img/acao.jpeg" alt="" class="img-fluid rounded w-25"></a></th>
+              <th scope="col"><a href="" class="linkjogoLoja">Random Game</a></th>
+              <th scope="col">Ação | Mundo Aberto</th>
+              <th scope="col"><p>R$150,99</p></th>
+            </tr>
+            <tr class="storeItem randomgame" onclick="alerta()">
+              <th scope="col"><a href=""><img src="/img/terror.jpeg" alt="" class="img-fluid rounded w-25"></a></th>
+              <th scope="col"><a href="" class="linkjogoLoja">Random Game</a></th>
+              <th scope="col">Terror | Susto</th>
+              <th scope="col"><p>R$150,99</p></th>
+            </tr>
+            <tr class="storeItem randomgame" onclick="alerta()">
+              <th scope="col"><a href=""><img src="/img/estrategia.jpeg" alt="" class="img-fluid rounded w-25"></a></th>
+              <th scope="col"><a href="" class="linkjogoLoja">Random Game</a></th>
+              <th scope="col">Estratégia | Contrução</th>
+              <th scope="col"><p>R$150,99</p></th>
+            </tr>
+            <tr class="storeItem randomgame" onclick="alerta()">
+              <th scope="col"><a href=""><img src="/img/plataforma.jpeg" alt="" class="img-fluid rounded w-25"></a></th>
+              <th scope="col"><a href="" class="linkjogoLoja">Random Game</a></th>
+              <th scope="col">Plataforma | Desafio</th>
+              <th scope="col"><p>R$150,99</p></th>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Fim Tabela Explorar -->
+
+        <!-- Navbar Explorar -->
+      
+        <nav aria-label="Navegação da tabela">
+          <ul class="pagination justify-content-center">
+            <li class="page-item active">
+              <a class="page-link" href="#explorar" onclick="alerta2()"˜ tabindex="-1" aria-disabled="true">Anterior</a>
+            </li>
+            <li class="page-item active" aria-current="page">
+              <a class="page-link" href="#explorar" onclick="alerta2()">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#explorar" onclick="alerta2()">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#explorar" onclick="alerta2()">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#explorar" onclick="alerta2()">...437</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#explorar" onclick="alerta2()">Próxima</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Fim Navbar Explorar -->
+      
+    </main>
+
+    <!-- Fim Conteudo -->
+
+  </body>
+</html>

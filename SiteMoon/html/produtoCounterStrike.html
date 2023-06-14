@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- LINK GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=K2D&display=swap"
+      rel="stylesheet"
+    />
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- LINK CSS BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moon - Counter-Strike</title>
+    <!-- SCRIP JAVASCRIPT -->
+    <script src="../js/produto.js" defer></script>
+    <!-- SCRIPT IONICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <!-- SCRIPT IONICONS -->
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- SCRIPT JAVASCRIPT BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JQUERY -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- STYLE -->
+    <style>
+
+      .imagemPrincipal{
+        height: 50vh;
+        width: 50vw;
+        background-position: center;
+        background-size: cover  ;
+      }
+
+      /* CLASSESDESTAQUE */
+      
+      .imagemDestaque1{
+        background-image: url(../img/counter-strike.jpeg) !important;
+      }
+
+      .imagemDestaque2{
+        background-image: url(../img/cs\ foto1.png) !important;
+      }
+
+      .imagemDestaque3{
+        background-image: url(../img/cs\ foto3.png) !important;
+      }
+
+      .imagemDestaque4{
+        background-image: url(../img/cs\ foto4.png) !important;
+      }
+
+      /* IMAGENS SECUNDARIAS */
+
+      .brilho{
+        filter: brightness(1) !important;
+        scale: 1.1;
+      }
+
+      .imagensSecundarias .imagemDestaque1{
+        transition: 1s;
+        filter: brightness(0.5);
+        background-position: center !important;
+        background-size: cover !important ;
+        cursor: pointer;
+      }
+
+      .imagensSecundarias .imagemDestaque1:hover{
+        border-radius: 0 !important;
+        scale: 1.1;
+        filter: brightness(1);
+        transition: .5s;
+      }
+
+      .imagensSecundarias .imagemDestaque2{
+        transition: 1s;
+        filter: brightness(0.5);
+        background-position: center !important;
+        background-size: cover !important ;
+        cursor: pointer;
+      }
+
+      .imagensSecundarias .imagemDestaque2:hover{
+        border-radius: 0 !important;
+        scale: 1.1;
+        filter: brightness(1);
+        transition: .5s;
+      }
+
+      .imagensSecundarias .imagemDestaque3{
+        transition: 1s;
+        filter: brightness(0.5);
+        background-position: center !important;
+        background-size: cover !important ;
+        cursor: pointer;
+      }
+
+      .imagensSecundarias .imagemDestaque3:hover{
+        border-radius: 0 !important;
+        scale: 1.1;
+        filter: brightness(1);
+        transition: .5s;
+      }
+
+      .imagensSecundarias .imagemDestaque4{
+        transition: 1s;
+        filter: brightness(0.5);
+        background-position: center !important;
+        background-size: cover !important ;
+        cursor: pointer;
+      }
+
+      .imagensSecundarias .imagemDestaque4:hover{
+        border-radius: 0 !important;
+        scale: 1.1;
+        filter: brightness(1);
+        transition: .5s;
+      }
+
+      .imagemSecundaria{
+        height: 12vh;
+        width: 14vw;
+      }
+
+      .col{
+        background-color: rgba(52, 4, 96, 0.761);
+      }
+
+      img{
+        width: 100%;
+        height: 100%;
+      }
+
+      .imagemSelect{
+        width: 15vw;
+        height: 15vh;
+      }
+
+      .avaliacao{
+        cursor: default !important;
+      }
+
+      .recomendacoes{
+        height: 30vh !important;
+        width: auto;
+        overflow: auto;
+      }
+
+      tr:hover{
+        background-color: rgb(66, 66, 66) !important;
+      }
+
+
+    </style>
+  </head>
+
+  <!-- Inicio Body -->
+  <body class="background">
+    <!-- Header -->
+
+    <header class="p-3 bgheader text-white fixed-top">
+      <div class="container">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+        >
+          <!-- Links Header -->
+
+          <ul
+            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+          >
+            <li>
+              <a href="index.html" class="nav-link px-2 text-white tituloLoja"
+                ><h2>MOON<ion-icon name="moon"></ion-icon></h2
+              ></a>
+            </li>
+            <div class="links">
+              <li>
+                <a
+                  href="index.html#carouselExample"
+                  class="nav-link px-2 text-white linkBtn"
+                >
+                  Promoções <ion-icon name="flame"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="index.html#explorar"
+                  class="nav-link px-2 text-white linkBtn"
+                >
+                  Explorar <ion-icon name="storefront-sharp"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a href="suporte.html" class="nav-link px-2 text-white linkBtn">
+                  Suporte <ion-icon name="shield-checkmark-sharp"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="listadedesejos.html"
+                  class="nav-link px-2 text-white linkBtn"
+                >
+                  Lista de Desejos <ion-icon name="star"></ion-icon
+                ></a>
+              </li>
+              <li><a href="carrinho.html" class="nav-link px-2 text-white linkBtn">Carrinho <ion-icon name="cart"></ion-icon></a></li>
+            </div>
+          </ul>
+
+          <!-- Search Bar -->
+
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+            <input
+              type="search"
+              class="form-control form-control-dark"
+              placeholder="Procurar por jogos... "
+              aria-label="Search"
+              list="gameList"
+            />
+            <datalist id="gameList">
+              <option value="Counter-Strike: Global-Offensive"></option>
+              <option value="Tom Clancy's Rainbow Six Siege"></option>
+            </datalist>
+          </form>
+
+          <!-- Login \ Cadastrar -->
+
+          <div class="text-end">
+            <button type="button" class="btn btn-outline-light me-2">
+              <a href="login.html"
+                >Login<ion-icon name="person-sharp"></ion-icon
+              ></a>
+            </button>
+            <button type="button" class="btn btn-warning">
+              <a href="cadastro.html"
+                >Cadastro<ion-icon name="person-add"></ion-icon
+              ></a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Fim Header -->
+
+    <!-- Conteudo da Pagina -->
+
+    <main class="main">
+      
+        <div class="container text-center">
+          <div class="row">
+            <div class="col text-start d-flex bg-transparent">
+              <h1>Counter-Strike: Global Offensive</h1>
+              <a href="" class="pt-4 ps-2 text-light">Adicionar jogo à lista de desejos +</a>
+            </div>
+          </div>
+          <div class="row">
+            <div id="imagemPrincipal" class="col mx-1 bg-transparent">
+              <!-- IMAGEM PRINCIPAL -->
+              <div class="imagemPrincipal imagemDestaque1">
+                
+              </div>
+            </div>
+            <div class="col  mx-1 pt-3 rounded">
+              <div class="imagemSecundaria">
+                <img class="rounded img-fluid" src="../img/cs main 2.png" alt="">
+              </div>
+              <p class="text-start pt-4">O Counter-Strike: Global Offensive (CS:GO) expande a jogabilidade de ação baseada em equipas introduzida pelo primeiro jogo da série cerca de 20 anos atrás. O CS:GO contém novos mapas, personagens, armas e modos de jogo, além de versões atualizadas de conteúdo do CS clássico.</p>
+              <div class="comprar d-flex justify-content-around">
+                <div class="preco">
+                  <del><h6>R$50,00</h6></del><h3>R$24,99<ion-icon name="flame"></ion-icon></h3>
+                </div>
+                <button id="btnComprar" class="btn btn-success btn-lg">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <!-- IMAGENS SECUNDARIAS -->
+          <div class="row pt-3 imagensSecundarias">
+            <div class="col g-0 py-3 ps-5 ">
+              <div id="imagemSecundaria1" class="imagemSelect imagemDestaque1 rounded brilho">
+              </div>
+            </div>
+            <div class="col g-0 py-3 ">
+              <div id="imagemSecundaria2" class="imagemSelect imagemDestaque2 rounded brilho">   
+              </div>
+            </div>
+            <div class="col g-0 py-3 ">
+              <div id="imagemSecundaria3" class="imagemSelect imagemDestaque3 rounded brilho">
+              </div>
+            </div>
+            <div class="col g-0 py-3 ">
+              <div id="imagemSecundaria4" class="imagemSelect imagemDestaque4 rounded">
+              </div>
+            </div>
+          </div>
+          <div class="row pt-3">
+            <div class="col rounded mx-2">
+              <h1>Requisitos</h1>
+              <div class="requisitos">
+              <h3>Mínimos</h3>
+              <p> Sistema Operativo: Windows® 7/Vista/XP</p>
+              <p> Processador: Intel® Core™ 2 Duo E6600 ou AMD Phenom™ X3 8750</p>
+              <p>Memória: 2 GB de RAM</p>
+              <p>Placa gráfica: A placa gráfica tem de ter 256 MB ou mais e ser compatível com DirectX 9 e Pixel Shader 3.0</p>
+              <p>DirectX: Versão 9.0c </p>
+              <p>Espaço no disco: Requer 15 GB de espaço livre</p>
+              </div>
+            </div>
+            <div class="col rounded">
+              <h1>Avaliações</h1>
+              <div class="avalicaoes">
+                <div class="tituloAvaliacoes d-flex ps-5 pt-3">
+                  <h3>Geral:</h3><h3 class="px-5 bg-success mx-5 rounded">POSITIVAS<ion-icon name="happy-outline" class="ms-2 mx-1"></ion-icon></h3>
+                </div>
+                <div class="recomendacoes">
+
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Usuário</th>
+                        <th scope="col">Análise</th>
+                        <th scope="col">Avaliação</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="bg-dark" style="--bs-bg-opacity: .8;">
+                        <th scope="row">1</th>
+                        <td>Sarto</td>
+                        <td class="text-start">Aqui não temos muito o falar né?
+                          Um classico, jogo bom pkrlh mas a comunidade é bem tosca KKK</td>
+                        <td><button class="btn btn-success avaliacao">POSITIVA</button></td>
+                      </tr>
+                      <tr class="bg-dark" style="--bs-bg-opacity: .8;">
+                        <th scope="row">2</th>
+                        <td>Mari</td>
+                        <td class="text-start">Além de amar o jogo, fiz muitas amizades boas!</td>
+                        <td><button class="btn btn-success avaliacao">POSITIVA</button></td>
+                      </tr>
+                      <tr class="bg-dark" style="--bs-bg-opacity: .8;">
+                        <th scope="row">3</th>
+                        <td>NeymarDoCS</td>
+                        <td class="text-start">Jogo maravilhoso, é um clássico, melhorou muitos ao longo do tempo, e acredito que irá melhorar mais ainda com a source2.</td>
+                        <td><button class="btn btn-success avaliacao">POSITIVA</button></td>
+                      </tr>
+                      <tr class="bg-dark" style="--bs-bg-opacity: .8;">
+                        <th scope="row">4</th>
+                        <td>paulo_rosario557</td>
+                        <td class="text-start"><p> Eu adoro jogar CS:GO porque a jogabilidade é incrivelmente desafiadora e envolvente. Cada partida é diferente e exige que eu esteja sempre pensando em estratégias e táticas para superar meus oponentes.</p>
+
+                        <td><button class="btn btn-success avaliacao">POSITIVA</button></td>
+                      </tr>
+                      <br>
+                      <tr class="bg-dark" style="--bs-bg-opacity: .8;">
+                        <th scope="row">5</th>
+                        <td>Kidzin666</td>
+                        <td class="text-start">Jogo lixo.</td>
+                        <td><button class="btn btn-danger avaliacao">NEGATIVA</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <small><i>Role para baixo para ver mais </i><ion-icon name="caret-down-outline"></ion-icon></small>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    </main>
+
+    <!-- Fim Conteudo -->
+  </body>
+</html>
