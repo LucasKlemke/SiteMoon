@@ -9,7 +9,7 @@
       rel="stylesheet"
     />
     <!-- LINK CPSS -->
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <!-- LINK CSS BOOTSTRAP -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
@@ -69,18 +69,19 @@
       }
 
       .itens {
-        width: 75vw;
+        width: 95vw;
         display: flex;
         height: 100vh;
         flex-direction: column;
+        justify-content: space-between;
       }
 
       .itemInner {
         cursor: pointer;
         display: flex;
         background-color: rgba(52, 3, 98, 0.738);
-        width: 67vw;
-        height: 15vh;
+        width: 70vw;
+        justify-content: space-between;
       }
 
       .itemInner:hover {
@@ -152,53 +153,104 @@
       }
 
       .name {
-        width: 30%;
+        width: 10vw;
       }
 
-      .genre {
-        width: 20%;
+      .image1,
+      .image2,
+      .image3,
+      .image4,
+      .image5,
+      .image6,
+      .image7,
+      .image8 {
+        max-width: 125px;
       }
 
-      .price {
-        width: 10%;
+      /* 
+    .genre {
+      width: 20%;
+    }
+
+    .price {
+      width: 10%;
+    }
+
+    .button {
+      width: 30%;
+    }  */
+
+      .main {
       }
 
-      .button {
-        width: 30%;
+      .imagemJogo,
+      .nomeJogo,
+      .generoJogo,
+      .valorJogo {
+        text-align: center;
+      }
+
+      .imagemJogo img {
+        width: 15vw;
+        height: 10vw;
+      }
+
+      .itemPromocao {
+        background-color: rgba(52, 3, 98, 0.738);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 5vw;
+        transition: 0.5s;
+      }
+
+      .itemPromocao:hover {
+        scale: 1.05;
+        background-color: rgba(102, 8, 189, 0.738);
+      }
+
+      @media screen and (max-width: 866px) {
+        p {
+          font-size: small !important;
+        }
       }
     </style>
   </head>
 
   <!-- Inicio Body -->
+
   <body class="background">
     <!-- Header -->
 
-    <header class="p-3 bgheader text-white fixed-top">
-      <div class="container">
+    <header class="p-3 bgheader text-white">
+      <div class="container x">
         <div
-          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start y"
         >
           <!-- Links Header -->
 
           <ul
-            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center align-items-center mb-md-0"
           >
             <li>
-              <a href="#" class="nav-link px-2 text-white tituloLoja"
-                ><h2>MOON<ion-icon name="moon"></ion-icon></h2
-              ></a>
+              <a href="index.html" class="nav-link px-2 text-white tituloLoja">
+                <h2>MOON<ion-icon name="moon"></ion-icon></h2>
+              </a>
             </li>
             <div class="links">
               <li>
                 <a
-                  href="#carouselExample"
+                  href="index.html#carouselExample"
                   class="nav-link px-2 text-white linkBtn"
                 >
                   Promoções <ion-icon name="flame"></ion-icon
                 ></a>
               </li>
               <li>
-                <a href="#explorar" class="nav-link px-2 text-white linkBtn">
+                <a
+                  href="index.html#explorar"
+                  class="nav-link px-2 text-white linkBtn"
+                >
                   Explorar <ion-icon name="storefront-sharp"></ion-icon
                 ></a>
               </li>
@@ -225,20 +277,20 @@
 
           <!-- Search Bar -->
 
-          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" id="searchForm">
+          <div class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
             <input
+              id="search"
               type="search"
               class="form-control form-control-dark"
               placeholder="Procurar por jogos... "
               aria-label="Search"
               list="gameList"
-              class="searchInput"
             />
             <datalist id="gameList">
               <option value="Counter-Strike: Global-Offensive"></option>
               <option value="Tom Clancy's Rainbow Six Siege"></option>
             </datalist>
-          </form>
+          </div>
 
           <!-- Login \ Cadastrar -->
 
@@ -296,7 +348,7 @@
               <a href="produtoRainbowSix.html">
                 <div class="destaque">
                   <img
-                    src="/img/Rainbow-SixMain.jpeg"
+                    src="../img/Rainbow-SixMain.jpeg"
                     alt=""
                     class="d-block w-100"
                   />
@@ -318,7 +370,7 @@
               <a href="produtoCounterStrike.html">
                 <div class="destaque">
                   <img
-                    src="/img/counter-strike.jpeg"
+                    src="../img/counter-strike.jpeg"
                     alt=""
                     class="d-block w-100"
                   />
@@ -385,7 +437,7 @@
               <div class="generos">
                 <div class="genero1">
                   <img
-                    src="/img/aventura.jpeg"
+                    src="../img/aventura.jpeg"
                     alt="Imagem"
                     class="d-block w-100"
                   />
@@ -393,7 +445,7 @@
                 </div>
                 <div class="genero2">
                   <img
-                    src="/img/corrida.jpeg"
+                    src="../img/corrida.jpeg"
                     alt="Imagem"
                     class="d-block w-100"
                   />
@@ -401,7 +453,7 @@
                 </div>
                 <div class="genero3">
                   <img
-                    src="/img/terror.jpeg"
+                    src="../img/terror.jpeg"
                     alt="Imagem"
                     class="d-block w-100"
                   />
@@ -415,7 +467,7 @@
               <div class="generos">
                 <div class="genero1">
                   <img
-                    src="/img/estrategia.jpeg"
+                    src="../img/estrategia.jpeg"
                     alt="Imagem"
                     class="d-block w-100"
                   />
@@ -423,7 +475,7 @@
                 </div>
                 <div class="genero2">
                   <img
-                    src="/img/acao.jpeg"
+                    src="../img/acao.jpeg"
                     alt="Imagem"
                     class="d-block w-100"
                   />
@@ -431,7 +483,7 @@
                 </div>
                 <div class="genero3">
                   <img
-                    src="/img/plataforma.jpeg"
+                    src="../img/plataforma.jpeg"
                     alt="Imagem"
                     class="d-block w-100"
                   />
@@ -479,208 +531,108 @@
 
         <!-- PROMOÇÃO PRODUTOS -->
 
-        <div class="itens mt-3">
-          <div class="item draggable" style="display: flex" id="r6">
-            <div class="itemInner rounded my-1">
-              <div
-                class="image1 m-0 rounded"
-                style="align-self: center; text-align: center"
-              ></div>
-              <div class="name" style="align-self: center; text-align: center">
-                <p>Tom Clancy's Rainbow Six® Siege</p>
-              </div>
-              <div class="genre" style="align-self: center; text-align: center">
-                <p>Ação | Multijogador</p>
-              </div>
-              <div class="price" style="align-self: center; text-align: center">
-                <del>R$89,00</del>
-                <p>R$30,00<ion-icon name="flame"></ion-icon></p>
-              </div>
-              <div
-                class="button pr-3"
-                style="align-self: center; text-align: center"
-              >
-                <button class="btn btn-success">COMPRAR</button>
-              </div>
+        <div
+          class="itemPromocao rounded mt-2"
+          id="csproduto"
+          onclick="mudarPagina1()"
+          style="cursor: pointer"
+        >
+          <div class="imagemJogo"><img src="../img/counter-strike.jpeg" /></div>
+          <div class="nomeJogo">Counter-Strike: Global Offensive</div>
+          <div class="generoJogo">Ação</div>
+          <div style="display: flex; flex-direction: column">
+            <div class="valorJogo"><del>R$ 50,00</del></div>
+            <div class="valorJogo">
+              R$24,99<ion-icon name="flame"></ion-icon>
             </div>
-            <h1 style="align-self: center"></h1>
-          </div>
-
-          <div class="item draggable" style="display: flex" id="cs">
-            <div class="itemInner rounded my-1">
-              <div
-                class="image2 m-0 rounded"
-                style="align-self: center; text-align: center"
-              ></div>
-              <div class="name" style="align-self: center; text-align: center">
-                <p>Counter-Strike: Global-Offensive</p>
-              </div>
-              <div class="genre" style="align-self: center; text-align: center">
-                <p>Ação | Multijogador</p>
-              </div>
-              <div class="price" style="align-self: center; text-align: center">
-                <del>R$50,00</del>
-                <p>R$24,99<ion-icon name="flame"></ion-icon></p>
-              </div>
-              <div
-                class="button pr-3"
-                style="align-self: center; text-align: center"
-              >
-                <button class="btn btn-success">COMPRAR</button>
-              </div>
-            </div>
-            <h1 style="align-self: center"></h1>
-          </div>
-
-          <div class="item draggable" style="display: flex">
-            <div class="itemInner rounded my-1">
-              <div
-                class="image3 m-0 rounded"
-                style="align-self: center; text-align: center"
-              ></div>
-              <div class="name" style="align-self: center; text-align: center">
-                <p>Random Game</p>
-              </div>
-              <div class="genre" style="align-self: center; text-align: center">
-                <p>Ação | Aventura</p>
-              </div>
-              <div class="price" style="align-self: center; text-align: center">
-                <del>R$99,99</del>
-                <p>R$59,99<ion-icon name="flame"></ion-icon></p>
-              </div>
-              <div
-                class="button pr-3"
-                style="align-self: center; text-align: center"
-              >
-                <button class="btn btn-success">COMPRAR</button>
-              </div>
-            </div>
-            <h1 style="align-self: center"></h1>
-          </div>
-
-          <div class="item draggable" style="display: flex">
-            <div class="itemInner rounded my-1">
-              <div
-                class="image4 m-0 rounded"
-                style="align-self: center; text-align: center"
-              ></div>
-              <div class="name" style="align-self: center; text-align: center">
-                <p>Random Game</p>
-              </div>
-              <div class="genre" style="align-self: center; text-align: center">
-                <p>Terror | Sobrevivência</p>
-              </div>
-              <div class="price" style="align-self: center; text-align: center">
-                <del>R$99,99</del>
-                <p>R$59,99<ion-icon name="flame"></ion-icon></p>
-              </div>
-              <div
-                class="button pr-3"
-                style="align-self: center; text-align: center"
-              >
-                <button class="btn btn-success">COMPRAR</button>
-              </div>
-            </div>
-            <h1 style="align-self: center"></h1>
-          </div>
-
-          <div class="item draggable" style="display: flex">
-            <div class="itemInner rounded my-1">
-              <div
-                class="image5 m-0 rounded"
-                style="align-self: center; text-align: center"
-              ></div>
-              <div class="name" style="align-self: center; text-align: center">
-                <p>Random Game</p>
-              </div>
-              <div class="genre" style="align-self: center; text-align: center">
-                <p>Estratégia | Construção</p>
-              </div>
-              <div class="price" style="align-self: center; text-align: center">
-                <del>R$99,99</del>
-                <p>R$59,99<ion-icon name="flame"></ion-icon></p>
-              </div>
-              <div
-                class="button pr-3"
-                style="align-self: center; text-align: center"
-              >
-                <button class="btn btn-success">COMPRAR</button>
-              </div>
-            </div>
-            <h1 style="align-self: center"></h1>
-          </div>
-
-          <div class="item draggable" style="display: flex">
-            <div class="itemInner rounded my-1">
-              <div
-                class="image6 m-0 rounded"
-                style="align-self: center; text-align: center"
-              ></div>
-              <div class="name" style="align-self: center; text-align: center">
-                <p>Random Game</p>
-              </div>
-              <div class="genre" style="align-self: center; text-align: center">
-                <p>Corrida | Simulação</p>
-              </div>
-              <div class="price" style="align-self: center; text-align: center">
-                <del>R$99,99</del>
-                <p>R$59,99<ion-icon name="flame"></ion-icon></p>
-              </div>
-              <div
-                class="button pr-3"
-                style="align-self: center; text-align: center"
-              >
-                <button class="btn btn-success">COMPRAR</button>
-              </div>
-            </div>
-            <h1 style="align-self: center"></h1>
           </div>
         </div>
 
-        <!-- Fim Tabela Promocao -->
+        <div
+          class="itemPromocao rounded mt-2"
+          id="r6produto"
+          onclick="mudarPagina2()"
+          style="cursor: pointer"
+        >
+          <div class="imagemJogo"><img src="../img/rainbow4k.jpeg" /></div>
+          <div class="nomeJogo">Tom Clancy's Rainbow Six Siege</div>
+          <div class="generoJogo">Ação</div>
+          <div style="display: flex; flex-direction: column">
+            <div class="valorJogo"><del>R$ 89,90</del></div>
+            <div class="valorJogo">
+              R$30,00<ion-icon name="flame"></ion-icon>
+            </div>
+          </div>
+        </div>
 
-        <!-- Navbar Promocao -->
+        <div class="itemPromocao rounded mt-2" style="cursor: pointer">
+          <div class="imagemJogo"><img src="../img/plataforma.jpeg" /></div>
+          <div class="nomeJogo">Random Game</div>
+          <div class="generoJogo">Plataforma</div>
+          <div style="display: flex; flex-direction: column">
+            <div class="valorJogo"><del>R$ 150,00</del></div>
+            <div class="valorJogo">
+              R$50,00<ion-icon name="flame"></ion-icon>
+            </div>
+          </div>
+        </div>
 
-        <nav aria-label="Navegação da tabela" id="explorar">
-          <ul class="pagination justify-content-center">
-            <li class="page-item active">
-              <a
-                class="page-link"
-                href="#carouselExample"
-                onclick="alerta2()"
-                tabindex="-1"
-                aria-disabled="true"
-                >Anterior</a
-              >
-            </li>
-            <li class="page-item active" aria-current="page">
-              <a class="page-link" href="#carouselExample" onclick="alerta2()"
-                >1</a
-              >
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#carouselExample" onclick="alerta2()"
-                >2</a
-              >
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#carouselExample" onclick="alerta2()"
-                >3</a
-              >
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#carouselExample" onclick="alerta2()"
-                >...22</a
-              >
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#carouselExample" onclick="alerta2()"
-                >Próxima</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <div class="itemPromocao rounded mt-2" style="cursor: pointer">
+          <div class="imagemJogo"><img src="../img/aventura.jpeg" /></div>
+          <div class="nomeJogo">Random Game</div>
+          <div class="generoJogo">Aventura</div>
+          <div style="display: flex; flex-direction: column">
+            <div class="valorJogo"><del>R$ 150,00</del></div>
+            <div class="valorJogo">
+              R$50,00<ion-icon name="flame"></ion-icon>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <!-- Fim Tabela Promocao -->
+
+      <!-- Navbar Promocao -->
+
+      <nav aria-label="Navegação da tabela" id="explorar" class="mt-5">
+        <ul class="pagination justify-content-center">
+          <li class="page-item active">
+            <a
+              class="page-link"
+              href="#carouselExample"
+              onclick="alerta2()"
+              tabindex="-1"
+              aria-disabled="true"
+              >Anterior</a
+            >
+          </li>
+          <li class="page-item active" aria-current="page">
+            <a class="page-link" href="#carouselExample" onclick="alerta2()"
+              >1</a
+            >
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#carouselExample" onclick="alerta2()"
+              >2</a
+            >
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#carouselExample" onclick="alerta2()"
+              >3</a
+            >
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#carouselExample" onclick="alerta2()"
+              >...22</a
+            >
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#carouselExample" onclick="alerta2()"
+              >Próxima</a
+            >
+          </li>
+        </ul>
+      </nav>
 
       <!-- Fim Navbar Promocao -->
 
@@ -693,198 +645,97 @@
 
         <!-- EXPLORAR PRODUTOS -->
 
-        <div class="item draggable" style="display: flex">
-          <div class="itemInner rounded my-1">
-            <div
-              class="image3 m-0 rounded"
-              style="align-self: center; text-align: center"
-            ></div>
-            <div class="name" style="align-self: center; text-align: center">
-              <p>Random Game</p>
-            </div>
-            <div class="genre" style="align-self: center; text-align: center">
-              <p>Ação | Aventura</p>
-            </div>
-            <div class="price" style="align-self: center; text-align: center">
-              <p>R$99,99</p>
-            </div>
-            <div
-              class="button pr-3"
-              style="align-self: center; text-align: center"
-            >
-              <button class="btn btn-success">COMPRAR</button>
-            </div>
-          </div>
-          <h1 style="align-self: center"></h1>
+        <div class="itemPromocao rounded mt-2" style="cursor: pointer">
+          <div class="imagemJogo"><img src="../img/estrategia.jpeg" /></div>
+          <div class="nomeJogo">Random Game</div>
+          <div class="generoJogo">Estratégia</div>
+          <div class="valorJogo">R$ 999,99</div>
         </div>
 
-        <div class="item draggable" style="display: flex">
-          <div class="itemInner rounded my-1">
-            <div
-              class="image4 m-0 rounded"
-              style="align-self: center; text-align: center"
-            ></div>
-            <div class="name" style="align-self: center; text-align: center">
-              <p>Random Game</p>
-            </div>
-            <div class="genre" style="align-self: center; text-align: center">
-              <p>Terror | Sobrevivência</p>
-            </div>
-            <div class="price" style="align-self: center; text-align: center">
-              <p>R$99,99</p>
-            </div>
-            <div
-              class="button pr-3"
-              style="align-self: center; text-align: center"
-            >
-              <button class="btn btn-success">COMPRAR</button>
-            </div>
-          </div>
-          <h1 style="align-self: center"></h1>
+        <div class="itemPromocao rounded mt-2" style="cursor: pointer">
+          <div class="imagemJogo"><img src="../img/acao.jpeg" /></div>
+          <div class="nomeJogo">Random Game</div>
+          <div class="generoJogo">Ação</div>
+          <div class="valorJogo">R$ 999,99</div>
         </div>
 
-        <div class="item draggable" style="display: flex">
-          <div class="itemInner rounded my-1">
-            <div
-              class="image5 m-0 rounded"
-              style="align-self: center; text-align: center"
-            ></div>
-            <div class="name" style="align-self: center; text-align: center">
-              <p>Random Game</p>
-            </div>
-            <div class="genre" style="align-self: center; text-align: center">
-              <p>Estratégia | Construção</p>
-            </div>
-            <div class="price" style="align-self: center; text-align: center">
-              <p>R$99,99</p>
-            </div>
-            <div
-              class="button pr-3"
-              style="align-self: center; text-align: center"
-            >
-              <button class="btn btn-success">COMPRAR</button>
-            </div>
-          </div>
-          <h1 style="align-self: center"></h1>
+        <div class="itemPromocao rounded mt-2" style="cursor: pointer">
+          <div class="imagemJogo"><img src="../img/terror.jpeg" /></div>
+          <div class="nomeJogo">Random Game</div>
+          <div class="generoJogo">Terror</div>
+          <div class="valorJogo">R$ 999,99</div>
         </div>
 
-        <div class="item draggable" style="display: flex">
-          <div class="itemInner rounded my-1">
-            <div
-              class="image6 m-0 rounded"
-              style="align-self: center; text-align: center"
-            ></div>
-            <div class="name" style="align-self: center; text-align: center">
-              <p>Random Game</p>
-            </div>
-            <div class="genre" style="align-self: center; text-align: center">
-              <p>Corrida | Simulação</p>
-            </div>
-            <div class="price" style="align-self: center; text-align: center">
-              <p>R$99,99</p>
-            </div>
-            <div
-              class="button pr-3"
-              style="align-self: center; text-align: center"
-            >
-              <button class="btn btn-success">COMPRAR</button>
-            </div>
-          </div>
-          <h1 style="align-self: center"></h1>
+        <div class="itemPromocao rounded mt-2" style="cursor: pointer">
+          <div class="imagemJogo"><img src="../img/corrida.jpeg" /></div>
+          <div class="nomeJogo">Random Gamee</div>
+          <div class="generoJogo">Corrida</div>
+          <div class="valorJogo">R$ 999,99</div>
         </div>
-
-        <div class="item draggable" style="display: flex">
-          <div class="itemInner rounded my-1">
-            <div
-              class="image7 m-0 rounded"
-              style="align-self: center; text-align: center"
-            ></div>
-            <div class="name" style="align-self: center; text-align: center">
-              <p>Random Game</p>
-            </div>
-            <div class="genre" style="align-self: center; text-align: center">
-              <p>Plataforma | Luta</p>
-            </div>
-            <div class="price" style="align-self: center; text-align: center">
-              <p>R$99,99</p>
-            </div>
-            <div
-              class="button pr-3"
-              style="align-self: center; text-align: center"
-            >
-              <button class="btn btn-success">COMPRAR</button>
-            </div>
-          </div>
-          <h1 style="align-self: center"></h1>
-        </div>
-
-        <div class="item draggable" style="display: flex">
-          <div class="itemInner rounded my-1">
-            <div
-              class="image8 m-0 rounded"
-              style="align-self: center; text-align: center"
-            ></div>
-            <div class="name" style="align-self: center; text-align: center">
-              <p>Random Game</p>
-            </div>
-            <div class="genre" style="align-self: center; text-align: center">
-              <p>Ação | Guerra</p>
-            </div>
-            <div class="price" style="align-self: center; text-align: center">
-              <p>R$99,99</p>
-            </div>
-            <div
-              class="button pr-3"
-              style="align-self: center; text-align: center"
-            >
-              <button class="btn btn-success">COMPRAR</button>
-            </div>
-          </div>
-          <h1 style="align-self: center"></h1>
-        </div>
-
-        <br />
-
-        <nav aria-label="Navegação da tabela" id="explorar">
-          <ul class="pagination justify-content-center">
-            <li class="page-item active">
-              <a
-                class="page-link"
-                href="#explorar"
-                onclick="alerta2()"
-                tabindex="-1"
-                aria-disabled="true"
-                >Anterior</a
-              >
-            </li>
-            <li class="page-item active" aria-current="page">
-              <a class="page-link" href="#explorar" onclick="alerta2()">1</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#explorar" onclick="alerta2()">2</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#explorar" onclick="alerta2()">3</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#explorar" onclick="alerta2()"
-                >...22</a
-              >
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#explorar" onclick="alerta2()"
-                >Próxima</a
-              >
-            </li>
-          </ul>
-        </nav>
       </div>
 
       <!-- Fim Tabela Explorar -->
+
+      <nav aria-label="Navegação da tabela" id="explorar" class="mt-5">
+        <ul class="pagination justify-content-center">
+          <li class="page-item active">
+            <a
+              class="page-link"
+              href="#carouselExample"
+              onclick="alerta2()"
+              tabindex="-1"
+              aria-disabled="true"
+              >Anterior</a
+            >
+          </li>
+          <li class="page-item active" aria-current="page">
+            <a class="page-link" href="#carouselExample" onclick="alerta2()"
+              >1</a
+            >
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#carouselExample" onclick="alerta2()"
+              >2</a
+            >
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#carouselExample" onclick="alerta2()"
+              >3</a
+            >
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#carouselExample" onclick="alerta2()"
+              >...22</a
+            >
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#carouselExample" onclick="alerta2()"
+              >Próxima</a
+            >
+          </li>
+        </ul>
+      </nav>
 
       <!-- Fim Navbar Explorar -->
     </main>
 
     <!-- Fim Conteudo -->
+    <script>
+      document
+        .getElementById("search")
+        .addEventListener("keydown", function (e) {
+          if (e.key === "Enter" || e.keycode === 13) {
+            if (this.value != "" || this.value != this.defaultValue) {
+              if (this.value == "Counter-Strike: Global-Offensive") {
+                location.href = "produtoCounterStrike.html";
+              }
+
+              if (this.value == "Tom Clancy's Rainbow Six Siege") {
+                location.href = "produtoRainbowSix.html";
+              }
+            }
+          }
+        });
+    </script>
   </body>
 </html>

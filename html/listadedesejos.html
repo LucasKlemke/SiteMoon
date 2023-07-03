@@ -144,22 +144,20 @@
 
   <!-- Inicio Body -->
   <body class="background">
-    <!-- Header -->
-
-    <header class="p-3 bgheader text-white fixed-top">
-      <div class="container">
+    <header class="p-3 bgheader text-white">
+      <div class="container x">
         <div
-          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start y"
         >
           <!-- Links Header -->
 
           <ul
-            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center align-items-center mb-md-0"
           >
             <li>
-              <a href="index.html" class="nav-link px-2 text-white tituloLoja"
-                ><h2>MOON<ion-icon name="moon"></ion-icon></h2
-              ></a>
+              <a href="index.html" class="nav-link px-2 text-white tituloLoja">
+                <h2>MOON<ion-icon name="moon"></ion-icon></h2>
+              </a>
             </li>
             <div class="links">
               <li>
@@ -201,8 +199,9 @@
 
           <!-- Search Bar -->
 
-          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+          <div class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
             <input
+              id="search"
               type="search"
               class="form-control form-control-dark"
               placeholder="Procurar por jogos... "
@@ -213,7 +212,7 @@
               <option value="Counter-Strike: Global-Offensive"></option>
               <option value="Tom Clancy's Rainbow Six Siege"></option>
             </datalist>
-          </form>
+          </div>
 
           <!-- Login \ Cadastrar -->
 
@@ -232,7 +231,6 @@
         </div>
       </div>
     </header>
-
     <!-- Fim Header -->
 
     <!-- Conteudo da Pagina -->

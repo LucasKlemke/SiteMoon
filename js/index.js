@@ -1,5 +1,5 @@
-const cs = document.getElementById("cs");
-const r6 = document.getElementById("r6");
+const cs = document.getElementById("csproduto");
+const r6 = document.getElementById("r6produto");
 
 const searchForm = document.getElementById("searchForm");
 searchForm.addEventListener("submit", function (event) {
@@ -29,3 +29,11 @@ cs.addEventListener("click", function () {
 r6.addEventListener("click", function () {
   window.location.href = "produtoRainbowSix.html";
 });
+
+function mudarPagina1() {
+  window.location.href = "produtoCounterStrike.html";
+}
+
+function mudarPagina2() {
+  window.location.href = "produtoRainbowSix.html";
+}
