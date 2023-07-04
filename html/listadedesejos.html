@@ -251,7 +251,7 @@
           />
         </div>
         <div class="itens mt-3">
-          <div class="item draggable" style="display: flex">
+          <div class="item draggable" style="display: flex" onclick="r6()">
             <div class="itemInner rounded my-1">
               <div
                 class="image1 m-0 rounded"
@@ -279,7 +279,12 @@
             </h1>
           </div>
 
-          <div class="item draggable" style="display: flex">
+          <div
+            class="item draggable"
+            style="display: flex"
+            id="cs"
+            onclick="cs()"
+          >
             <div class="itemInner rounded my-1">
               <div
                 class="image2 m-0 rounded"
@@ -370,6 +375,16 @@
         </h5>
       </div>
     </main>
+
+    <script>
+      function cs() {
+        window.location.href = "produtoCounterStrike.html";
+      }
+
+      function r6() {
+        window.location.href = "produtoRainbowSix.html";
+      }
+    </script>
 
     <!-- Fim Conteudo -->
   </body>
