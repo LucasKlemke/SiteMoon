@@ -222,7 +222,7 @@
   <body class="background">
     <!-- Header -->
 
-    <header class="p-3 bgheader text-white">
+    <header class="p-3 bgheader text-white" id="header">
       <div class="container x">
         <div
           class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start y"
@@ -716,11 +716,24 @@
         </ul>
       </nav>
 
+      <a
+        style="color: white"
+        id="topo"
+        onclick="topo()"
+        href="index.html#header"
+        >voltar ao topo</a
+      >
+
       <!-- Fim Navbar Explorar -->
     </main>
 
     <!-- Fim Conteudo -->
     <script>
+
+
+
+      }
+
       document
         .getElementById("search")
         .addEventListener("keydown", function (e) {
